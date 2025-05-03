@@ -1,0 +1,35 @@
+.quick-menu{
+    width: 100%;
+    max-width: 767px;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #cecece;
+}
+
+.quick-inner{
+    display: flex;
+    
+}
+.quick-inner li{
+    width: 20%;
+}
+.quick-inner li a{
+    padding: 20px 0;
+    line-height: 1.5em;
+}
+.quick-inner li a span{
+    display: block;
+    width: 100%;
+} 
+.quick-inner li a span ion-icon{
+    font-size: 30rem;
+}
+
+.quick-inner li:nth-child(3) a{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: auto;
+    transform: translateY(-30px);
+}

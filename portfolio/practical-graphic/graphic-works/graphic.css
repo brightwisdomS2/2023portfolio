@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#wrapper{
+    width: 100%;
+    padding: 70px 10%;
+    overflow: hidden;
+}
+
+.container{
+    width: 70%;
+    height: auto;
+    float: right;
+}
+.cont-inner{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.text-cont{
+    float: left;
+    width: 25%;
+    position: fixed;
+    top: 70px;
+    left: 10%;
+    padding-right: 30px;
+}
+.main-txt{
+}
+.main-txt h3{
+    margin: 0;
+    font-size: 2.5rem;
+}
+span.line{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 20px 0 25px;
+    background: #000;
+}
+.sub-txt{
+    line-height: 1.5em;
+}
+.text-cont b{
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sub-txt ul{
+    margin: 0;
+    /* width: 100%; */
+}
+
+.sub-txt ul li{
+    position: relative;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sub-txt ul li::before{
+    content: '✔️';
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+.image-cont{
+    width: 100%;
+}
+
+.image-cont img{
+    width: 100%;
+}
+
+@media (max-width:1024px){
+    .text-cont{
+        position: static;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        float: none;
+    }
+    span.line{
+        margin: 20px auto 25px;
+    }
+    h3,b{
+        text-align: center;
+    }
+
+    .sub-txt{
+        margin: 0 auto;
+    }
+
+    .sub-txt ul{
+        width: fit-content;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

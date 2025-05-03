@@ -1,0 +1,1067 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ####################### common ###################### */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    color: #222;
+    position: relative;
+    text-align: center;
+    letter-spacing: -1px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    outline: none;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    display: inline-block;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 100;
+}
+
+strong{
+    margin-right: 10px;
+    font-weight: 100;
+}
+
+
+.line {
+    text-decoration: underline;
+}
+
+/* ####################### layout ######################## */
+#container{
+    width: 100%;
+    height: auto;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+.section-inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* ####################### header ######################## */
+header {
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 1000;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    margin: auto;
+    padding: 15px;
+}
+
+header a.logo {
+    display: block;
+    float: left;
+    width: 20%;
+    padding-right: 50px;
+}
+
+header a.logo img {
+    width: 100%;
+}
+
+.gnb {
+    float: left;
+    width: 80%;
+}
+
+.gnb>ul {
+    /* overflow: hidden; */
+}
+
+.gnb>ul>li {
+    width: 16.6666%;
+    float: left;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.gnb>ul>li>a {
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.gnb>ul>li>a>img {
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+.gnb>ul>li:last-child a {
+    background: #fff;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+
+
+/* ####################### trigger ######################## */
+.trigger{
+    display: none;
+}
+.trigger{
+    display: none;
+}
+
+
+
+/* ####################### right-menu ######################## */
+.right-menu{
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: auto;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+.right-menu>a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px rgba(0,0,0,0.2);
+}
+.right-menu>a>img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* ####################### section1 ######################## */
+
+#section1 {
+    background: #E1E6CF;
+    height: 630px;
+    overflow: hidden;
+    margin-top: 80px;
+    position: relative;
+}
+
+.sec1 {
+    position: relative;
+    z-index: 500;
+}
+
+.sec1-txt {
+    padding-top: 100px;
+}
+
+.sec1-txt h3 {
+    font-size: 53px;
+}
+
+.sec1-txt h1 {
+    font-size: 100px;
+    color: #EC4115;
+}
+
+.sec1-image {
+    width: 100%;
+    position: relative;
+    z-index: 500;
+}
+
+.sec1-image img {
+    width: 100%;
+    transform: translateY(-140px);
+}
+
+.sec1-bg-txt{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+}
+.sec1-bg-txt>div{
+    width: 100%;
+    font-size: 100px;
+    line-height: 2em;
+    position: absolute;
+    overflow: hidden;
+}
+.sec1-bg-txt>div>img{
+    width: 50%;
+    float: left;
+    padding-right: 150px;
+}
+.sec1-bg-txt>div:nth-child(1){
+    top: 3%;
+    left: -100%;
+    animation: goRight-first 10s linear infinite;
+}
+.sec1-bg-txt>div:nth-child(2){
+    top: 3%;
+    left: -100%;
+    animation: goRight-first 10s 5s linear infinite;
+}
+.sec1-bg-txt>div:nth-child(3){
+    top: 40%;
+    left: -100%;
+    animation: goRight-second 10s 3s linear infinite;
+
+}
+.sec1-bg-txt>div:nth-child(4){
+    top: 40%;
+    left: -100%;
+    animation: goRight-second 10s 8s linear infinite;
+
+}
+.sec1-bg-txt>div:nth-child(5){
+    top: 80%;
+    left: -100%;
+    animation: goRight-third 10s 1.5s linear infinite;
+}
+.sec1-bg-txt>div:nth-child(6){
+    top: 80%;
+    left: -100%;
+    animation: goRight-third 10s 5.5s linear infinite;
+}
+
+@keyframes goRight-first{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@keyframes goRight-second{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+@keyframes goRight-third{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+/* ####################### section2 ######################## */
+
+#section2 {
+    overflow: hidden;
+}
+
+.sec2 {
+    padding: 150px 0 100px;
+}
+.sec2-txt{
+    opacity: 0;
+}
+
+.sec2-txt.active {
+    animation: up 1s linear both;
+}
+
+.sec2-txt h1,
+.sec2-txt h2 {
+    margin-right: 10px;
+}
+
+.sec2-txt h2 {
+    font-size: 70px;
+}
+
+.sec2-txt h1 {
+    font-size: 100px;
+    color: #EC4115;
+}
+
+.sec2-gallery {
+    position: relative;
+    height: auto;
+}
+
+.gallery-inner {
+    overflow: hidden;
+    width: 300%;
+    height: 800px;
+    
+}
+
+.gallery-box {
+    width: 400%;
+    /* height: 600px; */
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* transform: translateX(-30%); */
+    /* overflow: hidden; */
+
+}
+
+/* .gallery-box::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.gallery-box>li {
+    float: left;
+    display: block;
+    width: 25%;
+    padding: 80px 0 0;
+    opacity: 0.7;
+
+}
+
+.gallery-box>li.on {
+    transform: translateY(-2%);
+    opacity: 1;
+    padding: 70px 130px 0;
+}
+
+.gallery-box>li.on h5 {
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.gallery-box>li.on .sec2-image {
+    height: 500px;
+}
+
+.gallery-box>li.on img {
+    width: 100%;
+    transform: translateY(-11%);
+}
+
+.gallery-box>li>.sec2-image {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.gallery-box>li>.sec2-image>img {
+    width: 100%;
+}
+
+.gallery-box>li>h5 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    line-height: 2.5em;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.gallery-box>li>p {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+/* sec2-button */
+.sec2-btn {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 0 60px;
+}
+
+.sec2-btn span {
+    display: block;
+    width: 30px;
+    height: 130px;
+}
+
+.sec2-btn span:hover {
+    cursor: pointer;
+}
+
+.sec2-btn span.arrowleft {
+    float: left;
+}
+
+.sec2-btn span.arrowright {
+    float: right;
+}
+
+.sec2-btn span img {
+    height: 100%;
+}
+
+/* ####################### section 3 ######################## */
+#section3 {
+
+}
+
+.sec3 {
+    width: 100%;
+    max-width: 7000px;
+}
+
+.sec-first-slide {
+    width: 100%;
+    height: 264px;
+}
+
+.slide-rolling {
+    height: 264px;
+    background: url(../images/section3/sec3-rolling-01.png) repeat-X center center;
+    animation: rollingRight 15s linear infinite;
+}
+
+.slide-rolling:nth-child(2) {
+    animation: rollingLeft 15s linear infinite;
+}
+
+@keyframes rollingRight {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 1920px 0;
+    }
+}
+
+@keyframes rollingLeft {
+    from {
+        background-position: 1920px 0;
+    }
+
+    to {
+        background-position: 0 0
+    }
+}
+
+/* ####################### section 4 ######################## */
+#section4 {
+    background: url(../images/section4/sec4-bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+/* 
+.sec4-main-image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 25%;
+    border: 1px solid;
+} */
+
+.sec4-main-image img {
+    width: 100%;
+}
+
+.sec4 {
+    padding: 50px 0;
+    padding-bottom: 200px;
+}
+
+.sec4-skewer-image {
+    width: 35%;
+    margin: auto;
+}
+
+.sec4-skewer-image img {
+    width: 100%;
+}
+
+.sec4-txt b {
+    font-size: 35px;
+    display: block;
+    line-height: 1.5em;
+    opacity: 0;
+}
+
+.sec4-txt h1 {
+    font-size: 100px;
+    line-height: 1.5em;
+    color: #EC4115;
+    opacity: 0;
+}
+
+.sec4-txt h1 strong {
+    color: #000;
+}
+
+.sec4-txt h3 {
+    font-size: 65px;
+    opacity: 0;
+}
+
+.sec4-txt b.active{
+    animation: up 1s linear both;
+}
+.sec4-txt h1.active{
+    animation: up 1s 0.3s linear both;
+}
+.sec4-txt h3.active{
+    animation: up 1s 0.3s linear both;
+}
+
+.sec4-process-image {
+    width: 100%;
+    height: auto;
+    margin: 30px 0 80px;
+}
+
+.sec4-process-image img {
+    width: 100%;
+}
+
+.sec4-cooking-time {
+    display: flex;
+}
+
+th,
+td {
+    border-bottom: 1px solid #707070;
+    padding: 18px;
+    font-size: 26px;
+}
+
+th:nth-child(1) {
+    border-right: 1px solid;
+}
+
+th {
+    border-top: 5px solid #707070;
+}
+
+tr td:nth-child(1) {
+    border-right: 1px solid #707070;
+    font-weight: bold;
+}
+
+table tr:last-child td {
+    border-bottom: 5px solid #707070;
+}
+
+caption {
+    text-align: right;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+table:nth-child(1) caption {
+    padding-right: 15px;
+}
+
+table {
+    float: left;
+    width: 50%;
+}
+
+table:nth-child(1) {
+    padding-right: 15px;
+}
+
+table:nth-child(2) {
+    padding-left: 15px;
+}
+
+
+/* ####################### section 5 ######################## */
+#section5 {
+    background: url(../images/section5/sec5-bg.png) no-repeat center center;
+}
+
+.sec5 {
+    padding: 150px 0;
+}
+
+.sec5-txt {
+    margin-bottom: 20px;
+}
+
+.sec5-txt b {
+    font-size: 35px;
+    display: block;
+    opacity: 0;
+}
+
+.sec5-txt h3 {
+    font-size: 60px;
+    opacity: 0;
+
+}
+
+.sec5-txt h1 {
+    font-size: 100px;
+    color: #EC4115;
+    line-height: 1.5em;
+    opacity: 0;
+}
+
+.sec5-txt b.active{
+    animation: up 1s linear both;
+}
+.sec5-txt h1.active{
+    animation: up 1s 0.3s linear both;
+}
+.sec5-txt h3.active{
+    animation: up 1s 0.3s linear both;
+}
+
+
+/* .sec5-txt h3 strong {
+    text-decoration: underline;
+} */
+
+.tab-menu {
+    width: 100%;
+}
+
+.tab-btn {
+    width: 100%;
+    padding-left: 10%;
+}
+.clearfix {
+    overflow: hidden;
+    padding: 10px 0 0;
+}
+.tab-btn li {
+    width: 30%;
+    float: left;
+    background: #E2E2E2;
+    border-radius: 25px 25px 0 0;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.tab-btn li:nth-child(1) {
+    transform: translateX(60px);
+}
+
+.tab-btn li:nth-child(2) {
+    transform: translateX(30px);
+}
+
+.tab-btn li a {
+    display: block;
+    height: 100%;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40px;
+    line-height: 1.4em;
+    padding-top: 10px;
+    color: #595959;
+    
+}
+.tab-btn li.on{
+    z-index: 100;
+    position: relative;
+
+}
+.tab-btn li.on a {
+    color: #fff;
+    display: block;
+    border-radius: 25px 25px 0 0;
+}
+
+.tab-btn li:nth-child(1).on > a{
+    background: #003A85;
+}
+.tab-btn li:nth-child(2).on > a{
+    background: #FBA94D;
+}
+.tab-btn li:nth-child(3).on > a{
+    background: #EC4115;
+}
+.tab-cont {
+    position: relative;
+    height: 910px;
+    border-radius: 40px;
+}
+
+
+
+.tab-cont>div {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    /* display: none; */
+}
+
+.meat{
+    border: 5px solid #003A85;
+    border-radius: 40px;
+    z-index: 3;
+}
+
+.fish{
+    border: 5px solid #FBA94D;
+    border-radius: 40px;
+    z-index: 2;
+}
+
+.etc{
+    border: 5px solid #EC4115;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.meat > .main-txt-box {
+    background: #003A85;
+}
+.fish > .main-txt-box {
+    background: #FBA94D;
+}
+.etc > .main-txt-box {
+    background: #EC4115;
+}
+
+.main-txt-box {
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+
+.main-txt-box h2 {
+    width: 60%;
+    font-size: 70px;
+    float: left;
+    /* text-align: right; */
+    position: relative;
+}
+
+.main-txt-box h2::after {
+    content: '';
+    width: 5px;
+    height: 55px;
+    background: #fff;
+    top: 4px;
+    position: absolute;
+    right: -30px;
+
+}
+
+.main-txt-box p {
+    font-size: 27px;
+    width: 40%;
+    float: right;
+    text-align: left;
+    padding-left: 80px;
+    line-height: 1.2em;
+}
+
+.sec5-slide {
+    width: 100%;
+    padding: 0 60px;
+}
+
+.sec5-slide-box {
+    position: relative;
+}
+
+.sec5-slide-box div {
+    /* width: 15%; */
+    /* box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background: #fff; */
+    /* float: left; */
+    /* margin-right: 20px; */
+}
+
+.slide-cont-inner {
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.sec5-image {
+    width: 100%;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.sec5-image img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.sec5-slide-box div>h4 {
+    font-size: 45px;
+    padding: 10px 0;
+}
+
+.sec5-slide-box div>p {
+    font-size: 22px;
+    padding: 0 0 30px;
+    line-height: 1.2em;
+}
+
+/* ####################### section 6 ######################## */
+#section6{
+}
+.sec6{
+    width: 100%;
+    max-width: 1980px;
+    padding: 250px 0 170px;
+    position: relative;
+    /* background: url(../images/section6/sec6-bg.png); */
+}
+
+.sec6>img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sec6-txt{
+    /* margin: auto; */
+}
+.sec6-txt b{
+    font-size: 40px;
+    background: #000;
+    color: #fff;
+    padding: 0 70px;
+}
+.sec6-txt h1{
+    font-size: 100px;
+    color: #EC4115;
+    line-height: 1.5em;
+}
+.sec6-txt h3{
+    font-size: 50px;
+}
+
+/* .sec6-txt h3 strong{
+    margin-right: 10px;
+    text-decoration: underline;
+} */
+.review-slide{
+    position: relative;
+
+}
+.review-slide-cont{
+    /* border: 5px solid blue; */
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: #fff;
+}
+.review-slide-cont>div{
+    /* border: 5px solid green; */
+    position: absolute;
+    display: block;
+    width: 100%;
+    /* height: 500px; */
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+.review-cont-inner{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    position: relative;
+}
+.review-cont-inner>img{
+    display: inline-block !important;
+    width: 100%;
+    /* width: 300px !important; */
+    /* border: 5px solid #000; */
+}
+.review-phone{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 20%;
+    z-index: 100;
+    /* border: 10px solid yellow; */
+    background: transparent;
+    padding: 2%;
+    box-shadow: 1px 300px 100px 300px rgba(255, 255, 255, 0.5);
+
+}
+.review-phone img{
+    width: 100%;
+}
+
+/* sec6-Slick CSS  */
+#section6 .sec6 .review-slide .review-slide-cont .slick-dots li{
+    border: 1px solid red !important;
+    display: none;
+}
+#section6 .sec6 .review-slide .review-slide-cont .slick-arrow::before{
+    border: 1px solid #000;
+    display: none;
+}
+#section6 .sec6 .review-slide .review-slide-cont .slick-slide{
+    padding: 0.5%;
+}
+
+
+@keyframes up{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ####################### Footer ######################## */
+
+footer{
+    background: #EC4115;
+    position: relative;
+    z-index: 100;
+    color: #fff;
+}
+.footer-inner{
+    width: 100%;
+    overflow: hidden;
+    padding: 130px;
+}
+.footer-logo{
+    float: left;
+    width: 25%;
+}
+.footer-logo img{
+    width: 100%;
+}
+.company{
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding: 0 50px;
+}
+.privacy-page{
+    float: right;
+    width: 15%;
+}
+.privacy-page a{
+    color: #fff;
+}
+
+
+/* ####################### Privacy ######################## */
+#privacy-pop{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    z-index: 15000;
+    display: none;
+    /* transform: translate(-50%,-50%); */
+}
+.priv-txt{
+    width: 57%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    padding: 0 20px 20px;
+    line-height: 2em;
+    background: #fff;
+    z-index: 30000;
+}
+.priv-txt h3{
+    font-size: 26px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    line-height: 3.5em;
+}
+.priv-txt b{
+    font-size: 18px;
+    font-weight: 500;
+}
+.priv-txt p{
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 14px;
+}
+.close-btn{
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    margin: 20px auto;
+    background: #EC4115;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+.close-btn:hover{
+    cursor: pointer;
+}
+.priv-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20000;
+    background: rgba(0,0,0,0.5);
+}

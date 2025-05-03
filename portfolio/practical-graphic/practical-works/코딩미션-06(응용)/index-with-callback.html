@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Full Screen Navigation with jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Vegas SlideShow -->
+  <script src="js/vegas.js"></script>
+  <link rel="stylesheet" href="js/vegas.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="open-navi">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="close-navi">
+    <i class="fa fa-times"></i>
+  </div>
+  <div class="main-preview">
+    <div>
+      <span class="enter">
+        <h1 data-text="creation">creation</h1>
+        <a href="">enterance</a>
+      </span>
+    </div>
+    <div></div>
+  </div>
+  <div class="main">
+    <div class="logo">
+      <div>
+        <img src="images/photo-01.jpg">
+        <img src="images/photo-02.jpg">
+      </div>
+    </div>
+    <div class="navi">
+      <ul>
+        <li><a href="">history</a></li>
+        <li><a href="">exhibition</a></li>
+        <li><a href="">event</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    $('.open-navi').click(function() {
+      $('.main-preview').fadeOut(500, function(){
+        $('.main').fadeIn(500)
+      })
+      
+      $(this).addClass('active')
+      $('.close-navi').addClass('active')
+    });
+    $('.close-navi').click(function() {
+      $('.main').fadeOut(500, function(){
+        $('.main-preview').fadeIn(500)
+      })
+      $(this).removeClass('active')
+      $('.open-navi').removeClass('active')
+    });
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+// Position
+@mixin position($x, $xvalue, $y, $yvalue){
+    position: absolute;
+    // fixed는 제외한 absolute 기준일때로
+    #{$x}: $xvalue;
+    #{$y}: $yvalue;
+    //x,y 값은 left기준인지 right기준인지 또는 px인지 %인지 달라질 수 있으므로 변수로 빼준다
+    @if $xvalue == 50% and $yvalue == 50%{
+        transform: translate(-50%,-50%);
+        //가로 세로 가운데일경우
+    }@else if $xvalue == 50%{
+        transform: translateX(-50%);
+        // x축만 가로 가운데일경우
+    }@else if $yvalue == 50%{
+        transform: translateY(-50%);
+        // y축만 세로 가운데일경우
+    }
+}
+
+// Responsive
+@mixin mobile{
+    @media(min-width:0px) and (max-width:$web){
+        @content;
+    }
+}
+
+// Background
+// 파일명, x축, y축, 배경색, 가로크기, 세로크기
+@mixin bg($fileName, $x:null, $y:null, $color:null, $width:null, $height:null){
+    //필수 값이 아닌 것들을 null로 빼줌
+    background: url(#{$imageUrl}#{$fileName}) no-repeat $x $y $color;
+    //경로중 계속 겹치는 부분을 변수에 담아주고 파일명도 변수에 담아준다
+    //바뀌는 부분들은 변수에 담아줌 x, y, color, width, height
+    background-size: $width $height;
+}
+
+// IR
+@mixin hide{
+    //화면에서는 숨겨주지만 화면 낭독기는 읽을 수 있는 웹 접근성을 지키는 방법
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}

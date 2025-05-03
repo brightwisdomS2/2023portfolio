@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100vh;
+    line-height: 1.5em;
+    background-color: #f4f4f4;
+    font-weight: 300;
+    box-sizing: border-box;
+    position: relative;
+}
+
+ul,li {
+    list-style: none;
+}
+
+.tab-section {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.heading span {
+    color: crimson;
+}
+
+.heading input[type=text] {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ddd;
+    background: #fff url(images/search-icon.svg) no-repeat center left 10px;
+    background-size: 23px;
+    padding-left: 50px;
+}
+
+.heading input[type=text]::placeholder {
+    font-style: italic;
+    color: #999;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.heading input[type=text]:focus::placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+.tab-btn{
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px 0 0 10px;
+}
+
+.tab-btn li{
+    float: left;
+    width: 150px;
+    text-align: center;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background: #eee;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+.tab-btn li.active,
+.tab-btn li:hover{
+    background: #fff;
+    border-top: 2px solid crimson;
+}
+.tab-btn li:last-child{
+    border-right: none;
+}
+
+.tabs {
+    position: relative;
+    border: 1px solid #ddd;
+    border-top: none;
+    background: #fff;
+}
+
+.tab {
+    display: none;
+    padding: 40px;
+}
+.tab h2{
+    text-align: center;
+}
+.tab.active{
+    display: block;
+}
+
+.tab img {
+    float: left;
+    margin-right: 30px;
+}
+.tab p{
+    overflow: hidden;
+}

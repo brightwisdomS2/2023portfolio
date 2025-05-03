@@ -1,0 +1,30 @@
+.search {
+    display: flex;
+    /* input과 search__button 이 둘 다 인라인요소라 행으로 정렬되지만 공백을 없애주기 위해 flex 시켜준다 */
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid $purple;
+    padding: 0 5px;
+    &__button {
+        //$넣어주면 부모클래스까지 그대로 상속
+        //background: url('../images/btn_search.png') no-repeat center;
+        @include bg("btn_search.png", center);
+        //이미지 경로는 css파일 기준으로 찾아줘야함(어차피 .css로 컴파일 된 파일을 읽는 것이기 때문)
+        width: 46px;
+        height: 46px;
+        border-radius: 100%;
+    }
+}
+
+input {
+    position: relative;
+    top: 7px;
+    width: 345px;
+    height: 35px;
+    border-radius: 46px;
+    &::placeholder {
+        font-size: 17px;
+        color: $grey96;
+        line-height: 46px;
+    }
+}

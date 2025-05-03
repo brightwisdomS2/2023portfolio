@@ -1,0 +1,652 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
+/* layout */
+.header {
+    width: 100%;
+    height: auto;
+    background: #000000db;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 2400px;
+    height: auto;
+    margin: 44px auto;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #f5f5f7;
+}
+
+/*header*/
+.inner-header {
+    width: 100%;
+    max-width: 1000px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+h1.logo {
+    width: 5%;
+    height: 44px;
+    float: left;
+    padding: 14px 15px 14px 0;
+}
+
+h1.logo img {
+    height: 100%;
+    display: block;
+}
+
+.gnb {
+    width: 83%;
+    height: auto;
+    float: left;
+}
+
+.gnb>ul>li {
+    width: 10%;
+    height: auto;
+    text-align: center;
+    float: left;
+    color: #fff;
+    line-height: 44px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.gnb>ul>li a {
+    display: block;
+    color: #fff;
+}
+
+.gnb>ul>li .sub {
+    display: block;
+}
+
+.gnb>ul>li .sub>ul>li {
+    line-height: 30px;
+    font-size: 11px;
+}
+
+.cart,
+.search {
+    width: 6%;
+    float: left;
+}
+
+.cart a,
+.search a{
+    display: inline-block;
+    height: 44px;
+    padding: 13px 15px 16px 15px;
+}
+
+.cart img, 
+.search img{
+    height: 100%;
+    margin: 0 auto;
+}
+
+.sub-menu{
+    display: none;
+}
+
+/* entire */
+.section{
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section .title{
+    letter-spacing: -1px;
+}
+
+.section span.r1,
+.section span.r2{
+    margin: 0 5px;
+}
+
+.section .buttons a{
+    margin: 0 20px;
+    color: #2297ff;
+}
+
+/*container 시작*/
+.container .inner-con {
+    width: 100%;
+    max-width: 2600px;
+    height: auto;
+    margin: 0 auto;
+    /*
+    border: 1px solid;
+*/
+}
+
+/* 공통 */
+.container .inner-con .topSection {
+    width: 100%;
+    max-width: 2400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container .inner-con .topSection .topTxt {
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 10.5px;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.topSection .topTxt a{
+    color: #2297ff;
+    font-weight: normal;
+    display: inline-block;
+    letter-spacing: -1px;
+}
+
+/*section1 시작*/
+.section.sec1 {
+    background: url(../img/index/index-sec1-bg.jpg) no-repeat 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.secCon {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sec1Txt p {
+    line-height: 32px;
+    font-size: 27px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 70px;
+}
+
+.sec1Txt .buttons {
+    color: #fff;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+}
+
+.sec1Txt .buttons span.play{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2px;
+}
+
+.sec1Txt .buttons span.play img{
+    width: 100%;
+    padding: 5px;
+}
+
+.secCon.sec1Txt a {
+    color: #fff;
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*section2 시작*/
+.section.sec2 {
+    background: url(../img/index/index-sec2-bg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec2 .secCon {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section.sec2 .secCon.sec2Txt h1 {
+    padding-top: 50px;
+    line-height: 77px;
+    font-size: 55px;
+    color: #000;
+}
+
+.section.sec2 .secCon.sec2Txt p {
+    line-height: 32px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+}
+
+.section.sec2 .secCon.sec2Txt h5 {
+    line-height: 37px;
+    font-size: 14px;
+    color: #7b7b7b;
+}
+
+.section.sec2 .secCon.sec2Txt .buttons {
+    color: #2997ff;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.section.sec2 .secCon.sec2Txt a {
+    color: #2297ff;
+}
+
+
+/*section3 시작*/
+.section.sec3 {
+    background: url(../img/index/index-sec3-bg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec3 .secCon {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section.sec3 .secCon.sec3Txt h1 {
+    padding-top: 50px;
+    line-height: 77px;
+    font-size: 55px;
+    color: #000;
+}
+
+.section.sec3 .secCon.sec3Txt p {
+    line-height: 32px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+}
+
+.section.sec3 .secCon.sec3Txt .buttons {
+    color: #2997ff;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+
+.section.sec4 {
+    width: 100%;
+    max-width: 2600px;
+    height: auto;
+    text-align: center;
+}
+
+.section.sec4::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec4>ul>li::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section.sec4>ul>li {
+    width: 50%;
+    max-width: 1300px;
+    height: 600px;
+    float: left;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+    border: 10px solid #fff;
+}
+
+.section.sec4 .inner-sec {
+    letter-spacing: -0.5px;
+}
+
+
+.section.sec4 .inner-sec h1 {
+    padding-top: 50px;
+    line-height: 45px;
+    font-size: 37px;
+}
+
+.section.sec4 .inner-sec p {
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.section.sec4 h5 {
+    line-height: 34px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.section.sec4 .inner-sec .buttons {
+    color: #2997ff;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.section.sec4 .inner-sec a {
+    color: #2297ff;
+}
+
+.section.sec4 .buttons a{
+    margin: 0 10px;
+}
+
+.section.sec4>ul>li{
+    position: relative;
+}
+
+.section.sec4>ul>li:nth-child(1) {
+    background: url(../img/index/index-sec4-01-bg.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec4>ul>li:nth-child(2) {
+    background: url(../img/index/index-sec4-02-bg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec4>ul>li:nth-child(3) {
+    background: url(../img/index/index-sec4-03-bg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec4>ul>li:nth-child(4) {
+    background: url(../img/index/index-sec4-04-bg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+.section.sec4>ul>li:nth-child(5) {
+    background: url(../img/index/index-sec4-05-bg.jpg) no-repeat 50%;
+    background-size: 60%;
+    background-color: #000;
+}
+
+.section.sec4>ul>li:nth-child(6) {
+    background: url(../img/index/index-sec4-06-bg.jpg) no-repeat 50%;
+    background-size: cover;
+}
+
+
+.section.sec4>ul>li:nth-child(1) .inner-sec h5 {
+    line-height: 25px;
+}
+
+.section.sec4>ul>li:nth-child(2) h1,
+.section.sec4>ul>li:nth-child(4) h1,
+.section.sec4>ul>li:nth-child(5) h1,
+.section.sec4>ul>li:nth-child(6) h1{
+    color: #fff;
+}
+
+.section.sec4>ul>li p {
+    font-weight: 400;
+}
+
+.section.sec4>ul>li:nth-child(3) .buttons {
+    line-height: 50px;
+}
+
+.section.sec4>ul>li:nth-child(3) p {
+    font-size: 18px;
+    color: #e20101;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.section.sec4>ul>li:nth-child(5) h3 {
+    color: #fff;
+    padding-top: 50px;
+}
+
+/* .section.sec4>ul>li:nth-child(5) .inner-sec h1 {
+    background: linear-gradient(to right, #3dfff8, #ef0af2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 30px 0 0;
+} */
+
+.section.sec4>ul>li:nth-child(6) .secTxt {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+
+
+/*
+footer 시작
+*/
+.footer .inner-fcon {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    /* border: 1px solid;*/
+    margin: 0 auto;
+}
+
+.footer .inner-fcon .con {
+    width: 100%;
+    height: auto;
+    /*border: 1px solid;*/
+}
+
+.footer .inner-fcon .con.tfcon .inner-tfcon {
+    padding: 17px 0px;
+    /*
+border: 1px solid;
+*/
+}
+
+.footer .inner-fcon .con.tfcon .inner-tfcon p {
+    /* border: 1px solid;*/
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    color: #86868b;
+}
+
+.footer .inner-fcon .con.tfcon .inner-tfcon p.t2 {
+    margin: 10px 0;
+}
+
+.footer .inner-fcon .con.mfcon {
+    margin-bottom: 40px;
+}
+
+.footer .inner-fcon .con.mfcon .inner-mfcon .submfcon {
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    float: left;
+    font-size: 11px;
+}
+
+.footer .inner-fcon .con.mfcon .inner-mfcon::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.footer .inner-fcon .con.mfcon .inner-mfcon .submfcon {}
+
+.footer .inner-fcon .con.mfcon .inner-mfcon .submfcon>ul>li.mtitle {
+    font-weight: bold;
+    margin-top: 20px
+        /*
+    border: 1px solid;
+*/
+
+}
+
+.footer .inner-fcon .con.mfcon .inner-mfcon .submfcon>ul>li {
+    line-height: 25px;
+}
+
+
+.footer .inner-fcon .con.mfcon .inner-mfcon .submfcon>ul>li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.footer .inner-fcon span.line {
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background: #555;
+    display: block;
+}
+
+.footer .inner-fcon .con.bfcon {}
+
+
+.footer .inner-fcon .con.bfcon .inner-bfcon {
+    font-size: 12px;
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon p {
+    margin: 10px 0;
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon p>a {
+    color: #0066cc;
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon p>a:hover {
+    text-decoration: underline;
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu {
+    display: flex;
+    flex-flow: row nowrap;
+    /*한행만 차지*/
+    justify-content: space-between;
+    /*균등분할*/
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu span.copy {
+    display: inline-block;
+    line-height: 40px;
+    width: 30%;
+    color: #86868b;
+    /*
+    border:    1px solid;
+*/
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu .siteMap {
+    display: inline-block;
+    width: 50%;
+    line-height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    /*
+    border: 1px solid;
+*/
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu .siteMap span.line2 {
+    width: 1px;
+    height: 15px;
+    background: #86868b;
+    display: inline-block;
+    margin: 12.5px 10px;
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu .siteMap>a {
+    display: inline-block;
+
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu .siteMap>a:hover {
+    text-decoration: underline;
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu .rfmenu {
+    display: inline-block;
+    line-height: 30px;
+    width: 20%;
+    text-align: right;
+    /*
+    border: 1px solid;
+*/
+    display: flex;
+    flex-flow: row nowrap;
+    /*한행만 차지*/
+    justify-content: flex-end;
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu .rfmenu span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #cfcfcf;
+    background: #555;
+    margin: 10px 5px;
+    background: url(../img/footer/korea.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu .rfmenu a {
+    display: inline-block;
+    line-height: 40px;
+    /*
+    border: 1px solid;
+*/
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .bMenu .rfmenu a:hover {
+    text-decoration: underline;
+}
+
+.footer .inner-fcon .con.bfcon .inner-bfcon .btext {
+    color: #999999;
+    margin-bottom: 30px;
+    font-size: 10px;
+}

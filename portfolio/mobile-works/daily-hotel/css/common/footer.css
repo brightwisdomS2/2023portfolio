@@ -1,0 +1,110 @@
+footer {
+    width: 100%;
+    height: auto;
+    background: #f6f6f6;
+    padding: 30px 25px 150px;
+}
+
+.footer-inner {
+    overflow: hidden;
+}
+
+footer .logo {
+    width: 50%;
+    padding-right: 20%;
+    opacity: 0.5;
+    float: left;
+}
+
+.business {
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-size: 13rem;
+    color: #999;
+}
+
+.busi-info {
+    padding-top: 30px;
+    line-height: 1.5em;
+    color: #999;
+    font-weight: 300;
+    display: none;
+}
+
+.business.active~.busi-info {
+    display: block;
+}
+
+.business.active ion-icon {
+    transform: rotate(180deg);
+}
+
+.company {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.company>li {
+    float: left;
+    margin-right: 16px;
+    position: relative;
+}
+
+.company>li::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: #999;
+    right: -9px;
+    top: 2px;
+}
+
+.company>li:last-child::after {
+    display: none;
+}
+
+.company>li a {
+    color: #999;
+    font-size: 13rem;
+}
+
+.footer-inner>p {
+    width: 100%;
+    font-size: 12rem;
+    color: #999;
+    font-weight: 300;
+}
+
+.law-mark {
+    text-align: left;
+    line-height: 1em;
+    font-size: 12rem;
+    padding: 5px 0;
+    color: #999;
+    font-weight: 400;
+}
+
+.law-mark ion-icon {
+    transform: translateY(2px);
+}
+
+.gototop-btn{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 120px;
+    text-align: center;
+}
+
+.gototop-btn ion-icon{
+    font-size: 40rem;
+    padding-top: 10px;
+}

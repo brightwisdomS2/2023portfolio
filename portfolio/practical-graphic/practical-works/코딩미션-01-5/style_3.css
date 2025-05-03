@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.tab-inner {
+    height: auto;
+    text-align: center;
+}
+
+h1 {
+    padding: 30px 0;
+}
+
+*{
+    border: 10px solid #000;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    background: #000;
+}
+
+input {
+    display: none;
+}
+
+.tabs {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.items {
+    height: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.items>div {
+    height: 400px;
+}
+
+.items>div p {
+    padding: 20px 0;
+}
+
+.items>div p span {
+    color: orange;
+    font-weight: bold;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: lightblue;
+    cursor: pointer;
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1]{
+    border-radius: 50%;
+    background: crimson;
+} 
+input[id=tab2]:checked ~ .btn label[for=tab2]{
+    border-radius: 50%;
+    background: crimson;
+} 
+input[id=tab3]:checked ~ .btn label[for=tab3]{
+    border-radius: 50%;
+    background: crimson;
+} 
+
+input[id=tab1]:checked ~ .tabs .items{
+    top: 0px;
+}
+input[id=tab2]:checked ~ .tabs .items{
+    top: -400px;
+}
+input[id=tab3]:checked ~ .tabs .items{
+    top: -800px;
+}

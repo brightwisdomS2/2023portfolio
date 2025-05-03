@@ -1,0 +1,30 @@
+@media (max-width:1023px) {
+    /* header */
+    .header{
+        background: rgba(0,0,0,0.5);
+    }
+    h1.logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .gnb{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .cart{
+        position: absolute;
+        right: 0;
+    }
+    .sub-menu{
+        display: block;
+    }
+    
+
+
+
+
+
+}

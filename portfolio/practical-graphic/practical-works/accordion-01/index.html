@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>코딩미션 03-2</title>
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        /* Web Fonts : Lato */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+        /* FontAwesome 4.7 CDN */
+        @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            font-size: 15px;
+            background-color: crimson;
+            line-height: 1.5em;
+        }
+        .price-inner {
+            background-color: #eee;
+            width: 300px;
+            min-height: 500px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .price-inner h3 {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .title {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        .title:after {
+            content:"\f107";
+            font-family: fontawesome;
+            float: right;
+            background-color: #000;
+            color: #fff;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .title.active:after {
+            transform: rotate(180deg);
+            background-color: crimson;
+        }
+        .content {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 0 10px;
+            display: none;
+            margin-bottom: 5px;
+        }
+        .content span {
+            display: block;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .content span:last-child {
+            border: none;
+        }
+        .content span em {
+            font-style: normal;
+            background-color: yellowgreen;
+            color: #fff;
+            padding: 1px 7px;
+            border-radius: 3px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="price-inner">
+        <h3>Market</h3>
+        <div class="items">
+            <div class="item">
+                <div class="title active">Total Points</div>
+                <div class="content">
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">Total Points</div>
+                <div class="content">
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">Total Points</div>
+                <div class="content">
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">Total Points</div>
+                <div class="content">
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">Total Points</div>
+                <div class="content">
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">Total Points</div>
+                <div class="content">
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                    <span>Nateland fizprice <em>$3.45</em></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.item:nth-of-type(1) .content').show()
+        $('.title').click(function(){
+            // $(this).next().slideToggle()
+            $(this).parent('.item').siblings('.item').children('.content').slideUp()
+            $(this).next().slideDown()
+
+            $(this).parent('.item').siblings('.item').children('.title').removeClass('active')
+            $(this).addClass('active')
+        })
+    </script>
+    
+</body>
+</html>

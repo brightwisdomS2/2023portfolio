@@ -1,0 +1,215 @@
+*{
+    
+}
+
+body{
+    position: relative;
+    width: 100%;
+    max-width: 767px;
+    height: auto;
+}
+
+header{
+    width: 100%;
+    max-width: 767px;
+    height: auto;
+    background: #fff;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.header-inner{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+}
+
+.header-top{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.header-top a{
+    width: 45%;
+    margin: auto;
+}
+.header-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-bottom > li{
+}
+.menu-btn{
+    width: 7.5%;
+}
+.search{
+    width: 75%;
+    margin: 0 5%;
+}
+.cart{
+    width: 7.5%;
+}
+.search{
+    border-radius: 25px;
+    padding: 0 10px;
+    display: flex;
+    border: 1px solid #000;
+}
+.search input{
+    display: inline-block;
+    width: 90%;
+    line-height: 40px;
+    font-size: 18rem;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.search span{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}
+header .fa{
+    font-size: 24rem;
+    line-height: 40px;
+}
+
+header .menu-btn a{
+}
+/* ##################### GNB ################ */
+.gnb{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 300%;
+    left: 0;
+    padding: 30px 30px 200px;
+    background: #fff;
+    z-index: 2000;
+    transition: 1s;
+}
+.gnb.active{
+    top: 0;
+}
+
+.gnb-inner{
+    width: 100%;
+}
+.gnb .main-txt{
+    width: 100%;
+    position: relative;
+}
+.gnb .main-txt h3{
+    font-size: 24rem;
+    font-weight: 600;
+    text-align: center;
+}
+.gnb .close-btn{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 26rem;
+    transform: translateY(-10px);
+}
+
+.gnb .sub-txt h6{
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    padding-top: 20px;
+    border-bottom: 1px solid #6f6f6f;
+} 
+.gnb .category{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 15px 10px;
+}
+.gnb .category li{
+    width: 50%;
+    border-bottom: 1px solid #e1e1e1;
+}
+.gnb .category li a{
+    overflow: hidden;
+}
+.gnb .category li a h5{
+    float: left;
+    line-height: 2.5em;
+    font-weight: 700;
+    font-size: 18rem;
+}
+.gnb .category li a span{
+    float: right;
+}
+.gnb .type{
+    padding: 10px px;
+}
+.gnb .type a{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    font-size: 16rem;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+}
+.gnb .travel{
+    width: 100%;
+    height: auto;
+    border-top: 15px solid #f1f1f1;
+    border-bottom: 15px solid #f1f1f1;
+    padding: 40px 0;
+    margin-top: 20px;
+}
+.gnb h4{
+    font-size: 22rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.gnb .travel-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gnb .travel-inner li{
+    width: 20%;
+}
+.gnb .travel-inner li a{
+    text-align: center;
+    padding: 30px 5px 0;
+}
+.gnb .service{
+    padding: 40px 0;
+}
+.gnb .service-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gnb .service-inner li{
+    width: 50%;
+}
+.gnb .service-inner li a{
+    font-size: 16rem;
+    font-weight: 600;
+    padding: 20px 0;
+    border: 1px solid #f2f2f2;
+}
+
+.gnb .fa{
+    font-size: 26rem;
+    line-height: 0em;
+}
+
+header ion-icon{
+    font-size: 30rem;
+    padding: 5px 0 0;
+}

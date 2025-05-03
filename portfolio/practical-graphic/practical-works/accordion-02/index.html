@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>코딩미션 03-1</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <section>
+    <article>
+      <div class="heading">
+        <span><b>떠나고 싶은 당신</b>을 위한</span>
+        <h1>혼자가도 좋은 <b>여행지 best 5 ✈️ </b></h1>
+      </div>
+      <div class="content">
+        <div class="accordion">
+          <div class="title active" data-image="images/japan.jpeg">
+            가깝고 친숙한 나라, <b>일본 🇯🇵</b>
+          </div>
+          <div class="desc active">
+            혼자 해외여행 처음 떠나시는 분들도 부담없이 도전하기 좋은 일본! 교통도 매우 발달되어 있으며 치안도 좋은 일본은 여성분들이 혼자 여행하기에도 부담없이 좋답니다. <br>
+            쇼핑을 즐긴다면 도쿄, 자연을 느끼고 싶다면 훗카이도, 역사와 전통을 느끼고 싶다면 교토를 추천드려요!
+          </div>
+          <div class="title" data-image="images/portugal.jpeg">
+            색다른 유럽, <b>포르투갈 🇹🇭</b>
+          </div>
+          <div class="desc">
+            아기자기한 골목과 길거리가 타 유럽과는 또 다른 매력이 있는 나라 포르투갈은 다른 유럽 도시들보다 상대적으로 저렴한 물가를 자랑하는데요! 조앤 롤링이 포르투갈 여행을 하고 해리포터 영감을 받은 곳도 많다고 하니 해리포터 덕후들에게 추천할게요 
+          </div>
+          <div class="title" data-image="images/tailand.jpeg">
+            CNN이 선정한 디지털노마드 선호 도시, <b>태국 🇵🇹</b>
+          </div>
+          <div class="desc">
+            이국적인 풍경과 친절한 사람들, 맛있는 음식과 달콤한 과일에 착한 물가! 북적이는 도시부터 한적한 휴양지까지 모두 즐길 수 있는 나라 태국은 저렴한 물가에 다양한 볼거리와 먹거리가 많은 곳이랍니다.
+          </div>
+          <div class="title" data-image="images/singapore.jpeg">
+            다양한 문화가 섞인, <b>싱가포르 🇸🇬</b>
+          </div>
+          <div class="desc">
+            깨끗한 거리와 멋진 야경, 그리고 다양한 문화가 섞인 싱가포르는 공항과 도시가 가깝기도 하고, 주요 관광지가 다 붙어있어 접근성이 아주 좋은데요! <br> 
+            치안도 안전해 화려하고 아름다운 야경을 보는 것도 좋겠네요!
+          </div>
+          <div class="title" data-image="images/hongkong.jpeg">
+            특유의 분위기가 매력적인, <b>홍콩 🇭🇰</b>
+          </div>
+          <div class="desc">
+            무질서하면서도 반짝이는 거리가 주는 특유의 분위기가 매력적인 홍콩은 근처에 카지노의 도시 마카오와 붙어있어 홍콩을 여행하시는 분들은 마카오까지 둘러보고 오는 것을 추천해요!
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/japan.jpeg">
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <script>
+    $('.title').click(function(){
+      $(this).addClass('active')
+      $(this).siblings('.title').removeClass('active')
+      $(this).siblings('.desc').stop().slideUp()
+      $(this).next().stop().slideDown()
+
+      var dataImage = $(this).attr('data-image')
+      $('.image img').attr('src', dataImage)
+    })
+  </script>
+
+</body>
+</html>

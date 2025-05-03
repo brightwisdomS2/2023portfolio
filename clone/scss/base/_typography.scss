@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: "Noto Sans", sans-serif;
+    //전체 선택자(와일드카드)는 지양하는 것이 좋음
+}
+
+.txt{
+    &-purple{
+        color: $purple;
+    }
+}

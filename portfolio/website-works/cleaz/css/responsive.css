@@ -1,0 +1,132 @@
+@media (max-width:767px) {
+    html{
+        overflow-x: hidden !important;
+    }
+    /* Section-01 */
+    .sec1{
+        padding: 40px 0 40px;
+    }
+    .sec1 .sec1-inner p {
+        font-size: 10px;
+        letter-spacing: -0.5px;
+    }
+    .sec1 .sec1-inner .logo{
+        margin-bottom: 50px;
+    }
+    .sec1 .sec1-inner .main-txt{
+        width: 80%;
+    }
+    .sec1 .sec1-inner .benefit .benefit-inner > div{
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    /* Section-02 */
+    .sec2 .sec2-inner{
+        display: block;
+    }
+    .sec2 .sec2-inner > div {
+        width: 100%;
+        height: 330px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 10px;
+    }
+    .sec2 .sec2-inner > div > p{
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: -0.5px;
+    }
+
+    /* Section-03 */
+    .sec3 .sec3-inner{
+        padding: 70px 25px;
+    }
+    .sec3 .sec3-inner .main-txt{
+        width: 90%;
+    }
+    .sec3 .review-gallery .review-box{
+        width: 1200%;
+    }
+    .sec3 .review-gallery .review-box li{
+        width: 8.3333%;
+    }
+
+
+    /* Section-04 */
+    .sec4 .sec4-inner{
+        padding: 70px 25px;
+    }
+    .sec4 .sec4-inner .product .more{
+        display: block;
+        height: 600px;
+    }
+    .sec4 .sec4-inner .main-txt{
+        width: 90%;
+    }
+    .sec4 .sec4-inner p{
+        font-size: 22px;
+        margin: 10px 0 30px;
+    }
+    .sec4 .sec4-inner .product .more{
+        display: block;
+        margin-bottom: 10px;
+        height: auto;
+
+    }
+    .sec4 .sec4-inner .product .more .pro-image{
+        width: 100%;
+        height: 300px;
+    }
+    .sec4 .sec4-inner .product .more .pro-desc{
+        width: 100%;
+        padding: 40px 20px;
+        height: 200px;
+    }
+    .sec4 .sec4-inner .product .more .pro-desc .pro-btn{
+        font-size: 18px;
+        height: 60px;
+        line-height: 55px;
+    }
+
+
+    /* Section-05 */
+    .sec5 .sec5-inner{
+        padding: 70px 25px;
+    }
+    .sec5 .sec5-inner .main-txt{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sec5 .sec5-inner .event{
+        display: block;
+    }
+    .sec5 .sec5-inner .event .right{
+        width: 100%;
+        padding: 5% 20%;
+    }
+    .sec5 .sec5-inner .event .left{
+        width: 100%;
+    }
+    .sec5 .sec5-inner .event .left p{
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: -0.5px;
+    }
+    .sec5 .sec5-inner .event .left b{
+        font-size: 24px;
+        letter-spacing: -1px;
+    }
+    .sec5 .sec5-inner .event .left strong{
+        font-size: 11px;
+    }
+    .sec5 .sec5-inner .event .left a{
+        width: 100%;
+        height: 60px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+}

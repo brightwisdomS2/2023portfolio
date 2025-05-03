@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데일리호텔 로그인</title>
+    <!-- JS -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Go Back button -->
+        <input type="button" value="back" onclick="history.go(-1)" id="back" class="back-btn">
+        <label for="back">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+        </label>
+        <!-- login -->
+        <div class="login">
+            <div class="login-inner">
+                <h2>이메일 로그인</h2>
+                <form action="loginOk.do" method="post" name="loin-form" id="login-form">
+                    <input type="text" name="email" id="email" placeholder="이메일">
+                    <input type="text" name="pw" id="pw" placeholder="비밀번호">
+                    <input type="submit" value="로그인">
+                    <input type="checkbox" name="remember-id" id="remember-id">
+                    <label for="remember-id"></label>
+                    <b>ID 저장하기</b>
+                    <a href="" class="find-pw">비밀번호 찾기</a>
+                </form>
+                <div class="join">
+                    <p>
+                        아직 회원이 아니신가요?
+                        <a href="">이메일로 가입하기</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

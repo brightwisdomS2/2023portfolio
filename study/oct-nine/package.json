@@ -1,0 +1,13 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nice.js",
+  "scripts": {
+    "start": "node nice.js",
+    "show": "node show.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

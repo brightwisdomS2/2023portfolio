@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데일리호텔</title>
+    <!-- JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Slick.js -->
+    <script src="js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <!-- ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Custom JS & CSS -->
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/common/header.css">
+    <link rel="stylesheet" href="css/common/footer.css">
+    <link rel="stylesheet" href="css/common/quick-menu.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script>
+        $(document).ready(function () {
+            //Header load
+            $('.header-include').load('http://brightwisdoms2.dothome.co.kr/portfolio/mobile-works/daily-hotel/html/common/header.html', function () {
+                $('header .menu-btn').click(function () {
+                    //a 링크로 인한 재로드 방지
+                    //크로스 브라우징
+                    event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+                    //GNB 나타나게
+                    $('.gnb').addClass('active');
+                });
+                //GNB Close
+                $('.gnb .close-btn').click(function () {
+                    // event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+                    $('.gnb').removeClass('active')
+                })
+            });
+
+            //Footer load
+            $('.footer-include').load('http://brightwisdoms2.dothome.co.kr/portfolio/mobile-works/daily-hotel/html/common/footer.html', function () {
+                $('.business').click(function () {
+                    event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+
+                    $(this).toggleClass('active');
+                })
+            })
+
+            //Quick-Menu load
+            $('.quick-menu-include').load('http://brightwisdoms2.dothome.co.kr/portfolio/mobile-works/daily-hotel/html/common/quick-menu.html')
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Include Header -->
+        <div class="header-include"></div>
+
+        <!-- Container -->
+        <div id="container">
+            <section id="section1">
+                <div class="sec1 section-inner">
+                    <ul class="category">
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-00.png" alt="">
+                                해외숙소
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-01.png" alt="">
+                                프리미엄
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-02.png" alt="">
+                                내주변 숙소
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-03.png" alt="">
+                                게스트하우스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-04.png" alt="">
+                                풀빌라/펜션
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-05.png" alt="">
+                                호텔/리조트
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-06.png" alt="">
+                                모텔
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-07.png" alt="">
+                                전체카테고리
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="banner-slide">
+                        <div class="slide-box">
+                            <div>
+                                <a href="">
+                                    <img src="images/section1/banner-00.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="images/section1/banner-01.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="images/section1/banner-02.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <img src="images/section1/banner-03.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="category">
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-08.png" alt="">
+                                4월혜택
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-09.png" alt="">
+                                이벤트
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-10.png" alt="">
+                                레스토랑
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section1/main-icon-11.png" alt="">
+                                레저/티켓
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="sec2 section-inner">
+                    <a href="http://brightwisdoms2.dothome.co.kr/portfolio/mobile-works/daily-hotel/html/login.html" class="gotojoin">
+                        <span>
+                            <img src="images/section2/daily-hotel-icon.png" alt="">
+                        </span>
+                        <p>
+                            데일리 호텔이 처음이신가요? <br>
+                            <b>
+                                회원가입 후 혜택을 받아보세요!
+                            </b>
+                        </p>
+                        <div class="arrow-btn">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="section3">
+                <div class="sec3 section-inner">
+                    <h2>지금, 모두가 눈여겨보는 곳</h2>
+                    <ul class="category">
+                        <li class="active">
+                            <a href="">전체</a>
+                        </li>
+                        <li>
+                            <a href="">호텔/리조트</a>
+                        </li>
+                        <li>
+                            <a href="">펜션</a>
+                        </li>
+                        <li>
+                            <a href="">모텔</a>
+                        </li>
+                        <li>
+                            <a href="">레저</a>
+                        </li>
+                        <li>
+                            <a href="">레스토랑</a>
+                        </li>
+                    </ul>
+                    <div class="tabs">
+                        <div class="tabs-inner">
+                            <div class="tab">
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/nesthotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>네스트 호텔</h4>
+                                        <strong>인천ㅣ특1급</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>200,000</b>원</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/shillahotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>신라 호텔</h4>
+                                        <strong>서울ㅣ특1급</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>220,000</b>원</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/pension-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>강릉애 펜션</h4>
+                                        <strong>강원ㅣ펜션</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>170,000</b>원</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Hotel -->
+                            <div class="tab">
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/nesthotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>네스트 호텔</h4>
+                                        <strong>인천ㅣ특1급</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>200,000</b>원</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/shillahotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>신라 호텔</h4>
+                                        <strong>서울ㅣ특1급</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>220,000</b>원</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/riversidehotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>리버사이드 호텔</h4>
+                                        <strong>서울ㅣ호텔</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>180,000</b>원</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Pension -->
+                            <div class="tab">
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/nesthotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>강릉애 펜션</h4>
+                                        <strong>강원ㅣ펜션</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>170,000</b>원</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/nesthotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>강릉애 펜션</h4>
+                                        <strong>강원ㅣ펜션</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>170,000</b>원</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/nesthotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>강릉애 펜션</h4>
+                                        <strong>강원ㅣ펜션</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>170,000</b>원</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Motel -->
+                            <div class="tab">
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/motel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>프리미엄 모텔</h4>
+                                        <strong>서울ㅣ모텔</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>150,000</b>원</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/motel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>프리미엄 모텔</h4>
+                                        <strong>서울ㅣ모텔</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>150,000</b>원</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/motel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>프리미엄 모텔</h4>
+                                        <strong>서울ㅣ모텔</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>150,000</b>원</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Leisure -->
+                            <div class="tab">
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/leisure-00.PNG" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>일산 원마운트 워터파크</h4>
+                                        <strong>경기ㅣ키즈</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>19,400</b>원~</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/leisure-01.PNG" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>에버랜드 종일이용권</h4>
+                                        <strong>경기ㅣ테마파크</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>39,900</b>원~</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/riversidehotel-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>2023순천만 국제정원</h4>
+                                        <strong>전남ㅣ공연/전시</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>14,600</b>원~</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Restaurant -->
+                            <div class="tab">
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/restaurant-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>[롯데호텔서울]라세느</h4>
+                                        <strong>서울ㅣ뷔페</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>130,000</b>원~</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/restaurant-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>[롯데호텔서울]라세느</h4>
+                                        <strong>서울ㅣ뷔페</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>130,000</b>원~</h5>
+                                    </div>
+                                </a>
+                                <a href="" class="place">
+                                    <span>
+                                        <img src="images/section3/restaurant-00.jpeg" alt="">
+                                    </span>
+                                    <div>
+                                        <h4>[롯데호텔서울]라세느</h4>
+                                        <strong>서울ㅣ뷔페</strong>
+                                        <p class="star">
+                                            <span>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half"></ion-icon>
+                                            </span>
+                                            <b>4.5 (8,297)</b>
+                                        </p>
+                                        <h5><b>130,000</b>원~</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="more-btn">
+                        전체보기 >
+                    </a>
+                </div>
+            </section>
+
+            <section id="section4">
+                <div class="sec4 section-inner">
+                    <h2>프리미엄</h2>
+                    <ul class="premium">
+                        <li>
+                            <a href="">
+                                <img src="images/section4/nesthotel-00.jpeg" alt="">
+                                <h5>특급호텔 특가</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section4/pension-00.jpeg" alt="">
+                                <h5>프리미엄 펜션</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/section4/restaurant-00.jpeg" alt="">
+                                <h5>오늘만이가격</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="section5">
+                <div class="sec5 section-inner">
+                    <h2>강력추천! 봄 특가 호캉스</h2>
+                    <b>데일리 단독 특가 + 선착순 쿠폰</b>
+                    <div class="discount">
+                        <div class="discount-inner slide-box">
+                            <div>
+                                <span class="disc-image">
+                                    <img src="images/section5/place-image-00.png" alt="">
+                                </span>
+                                <div class="sub-txt">
+                                    <div class="place">
+                                        <h4>롯데리조트 부여</h4>
+                                        <strong>충남ㅣ리조트</strong>
+                                    </div>
+                                    <div class="price">
+                                        <div>
+                                            <b>270,000원</b>
+                                            <h6>37%</h6>
+                                        </div>
+                                        <div>
+                                            <h5>169,650원부터</h5>
+                                            <span>
+                                                <ion-icon name="pricetag-outline"></ion-icon>8%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="disc-image">
+                                    <img src="images/section5/place-image-00.png" alt="">
+                                </span>
+                                <div class="sub-txt">
+                                    <div class="place">
+                                        <h4>롯데리조트 부여</h4>
+                                        <strong>충남ㅣ리조트</strong>
+                                    </div>
+                                    <div class="price">
+                                        <div>
+                                            <b>270,000원</b>
+                                            <h6>37%</h6>
+                                        </div>
+                                        <div>
+                                            <h5>169,650원부터</h5>
+                                            <span>
+                                                <ion-icon name="pricetag-outline"></ion-icon>8%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="disc-image">
+                                    <img src="images/section5/place-image-00.png" alt="">
+                                </span>
+                                <div class="sub-txt">
+                                    <div class="place">
+                                        <h4>롯데리조트 부여</h4>
+                                        <strong>충남ㅣ리조트</strong>
+                                    </div>
+                                    <div class="price">
+                                        <div>
+                                            <b>270,000원</b>
+                                            <h6>37%</h6>
+                                        </div>
+                                        <div>
+                                            <h5>169,650원부터</h5>
+                                            <span>
+                                                <ion-icon name="pricetag-outline"></ion-icon>8%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="disc-image">
+                                    <img src="images/section5/place-image-00.png" alt="">
+                                </span>
+                                <div class="sub-txt">
+                                    <div class="place">
+                                        <h4>롯데리조트 부여</h4>
+                                        <strong>충남ㅣ리조트</strong>
+                                    </div>
+                                    <div class="price">
+                                        <div>
+                                            <b>270,000원</b>
+                                            <h6>37%</h6>
+                                        </div>
+                                        <div>
+                                            <h5>169,650원부터</h5>
+                                            <span>
+                                                <ion-icon name="pricetag-outline"></ion-icon>8%
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section6">
+                <div class="sec6 section-inner">
+                    <a href="" class="ad-banner">
+                        <p>
+                            <b>4월 제휴 할인 혜택 모음</b><br>
+                            제휴 할인 챙기세요!
+                        </p>
+                        <span>
+                            <img src="images/section6/ad-banner-00.png" a lt="">
+                        </span>
+                    </a>
+                    <a href="" class="ad-banner">
+                        <p>
+                            취향 담은 여행 리뷰 남기고<br>
+                            <b>4월에도 2,000P 받으세요!</b>
+                        </p>
+                        <span>
+                            <img src="images/section6/ad-banner-01.png" a lt="">
+                        </span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!-- Include Footer -->
+        <div class="footer-include"></div>
+
+
+        <div class="quick-menu-include"></div>
+
+    </div>
+</body>
+
+</html>

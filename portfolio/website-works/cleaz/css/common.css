@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serxif;
+    font-weight: 400;
+    color: #222;
+    font-size: 16px;
+    font-style: 'fontello';
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img{
+    border: none;
+    outline: none;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: auto;
+    margin-top: 200px;
+}
+/* go to top */
+.gototop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10%;
+    bottom: 60px;
+    transition: 1s;
+    background: #355CA1;
+    border-radius: 50%;
+    transform: translateY(150px);
+    opacity: 0;
+    border: 1px solid #fff;
+    z-index: 1000;
+}
+.gototop.active{
+    display: block;
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+.gototop:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.gototop a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+

@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10px;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Noto Sans KR', sans-serxif;
+    font-weight: 400;
+    color: #222;
+    font-size: 10px;
+    /* font-style: 'fontello'; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    outline: none;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+
+/* Layout */
+/* .container {
+    width: 100vw;
+    height: auto;
+    background: #333;
+} */
+
+section {
+    width: 100vw;
+    height: auto;
+}
+
+/* Section-01 */
+.sec1 {
+    width: 100vw;
+    height: auto;
+    background: url(../images/landing-sec1/sec1-bg-object.png) no-repeat center center;
+    background-size: cover;
+    padding: 70px 0 120px;
+    position: relative;
+}
+
+.sec1-inner {
+    padding: 0 35px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sec1 .logo {
+    overflow: hidden;
+    margin-bottom: 90px;
+}
+
+.sec1 .logo-inner {
+    width: 16%;
+    height: auto;
+    float: right;
+}
+
+.sec1 .logo a{
+    display: block;
+    height: 100%;
+}
+.sec1 .logo img {
+    width: 100%;
+}
+
+.sec1 .main-txt {
+    width: 70%;
+    margin: 0 auto;
+    animation: up-down 1.2s linear infinite;
+}
+
+.sec1 .main-txt img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* .sec1 .more {
+    width: 58%;
+    height: 75px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 75px;
+    margin: 0 auto;
+    margin-top: 80px;
+} */
+
+.arrow {
+    width: 20%;
+    padding: 80px 0;
+    margin: 0 auto;
+
+}
+
+.arrow img {
+    width: 100%;
+}
+
+.arrow img:nth-child(1) {
+    animation: opacity 1.5s 0.1s ease-in-out infinite;
+}
+
+.arrow img:nth-child(2) {
+    animation: opacity 1.5s 0.3s ease-in-out infinite;
+}
+
+.arrow img:nth-child(3) {
+    animation: opacity 1.5s 0.5s ease-in-out infinite;
+}
+
+.benefit {
+    width: 100%;
+}
+
+.benefit-inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.benefit-inner>div {
+    width: 49%;
+    float: left;
+    margin: 7px 0;
+    opacity: 0;
+}
+
+.benefit-inner>div img {
+    width: 100%;
+}
+
+.benefit-inner>div a{
+    display: block;
+    height: 100%;
+}
+
+.benefit-inner>div a:hover{
+    cursor: pointer;
+}
+
+.benefit-inner>div:nth-child(1),
+.benefit-inner>div:nth-child(2) {
+    padding-left: 1%;
+}
+
+.benefit-inner>div:nth-child(1) {
+    margin-left: 1%;
+}
+
+.benefit-inner>div.active:nth-child(1) {
+    animation: benefit 1.5s 0s both;
+}
+
+.benefit-inner>div.active:nth-child(2) {
+    animation: benefit 1.5s 0.5s both;
+}
+
+.benefit-inner>div.active:nth-child(3) {
+    animation: benefit 1.5s 1s both;
+}
+
+.benefit-inner>div.active:nth-child(4) {
+    animation: benefit 1.5s 1.5s both;
+}
+
+.benefit-inner>div:nth-child(3),
+.benefit-inner>div:nth-child(4) {
+    padding-right: 1%;
+}
+
+.sec1 h6 {
+    color: #fff;
+    text-align: right;
+    padding-right: 3%;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-30px);
+    }
+
+    75% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes benefit {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Section-02 */
+.sec2 {
+    width: 100vw;
+    height: auto;
+    background: #000;
+}
+
+.sec2-inner {
+    display: flex;
+    /* max-width: 1400px; */
+    margin: 0 auto;
+}
+
+.sec2-inner>div {
+    width: 50%;
+    padding: 70px 50px;
+
+}
+
+.sec2-inner>div:nth-child(1) {
+    background: url(../images/landing-sec2/sec2-tire.png) no-repeat center;
+    background-size: cover;
+}
+
+.cleaz-logo {
+    display: inline-block;
+    width: 200px;
+}
+
+.cleaz-logo img {
+    width: 47%;
+    float: left;
+    display: inline-block;
+    opacity: 0;
+}
+
+.sec2-inner>div>h3 {
+    font-size: 2rem;
+    text-align: left;
+    opacity: 0;
+    font-weight: 400;
+}
+.cleaz-logo img:nth-child(1){
+    margin-right: 6%;
+}
+.cleaz-logo img:nth-child(2){
+    transform: translateY(-5px);
+}
+
+.cleaz-logo img:nth-child(1).active {
+    animation: brand-story 1s 0.5s both;
+}
+.cleaz-logo img:nth-child(2).active {
+    animation: brand-story 1s 1s both;
+}
+
+.sec2-inner>div>p.active {
+    animation: brand-story 1s 1.5s both;
+}
+
+@keyframes brand-story {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* Section-03 */
+.sec3 {
+    background: #fff;
+}
+
+.sec3-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 140px 25px;
+}
+
+.sec3 .main-txt {
+    width: 55%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.sec3 .main-txt img {
+    width: 100%;
+}
+
+.sec3 .review-gallery{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+.sec3 .review-box{
+    width: 400%;
+    height: 700px;
+    display: inline-block;
+    /* background: linear-gradient(to right, red, blue); */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sec3 .review-box li{
+    width: 8.3333%;
+    display: inline-block;
+}
+.sec3 .review-box li img{
+    width: 100%;
+}
+
+/* .sec3 .review {
+    display: flex;
+    width: 100%;
+}
+
+.sec3 .review>li {
+    width: 50%;
+}
+
+.sec3 .review>div>img {
+    width: 100%;
+} */
+
+/* Section-04 */
+.sec4 {
+    background: url(../images/landing-sec4/sec4-bg.png) no-repeat center center;
+    background-size: cover;
+}
+
+.sec4-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 140px 50px;
+}
+
+.sec4 .main-txt {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.sec4 .main-txt img {
+    width: 100%;
+}
+
+.sec4 p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.5px;
+    margin: 30px 0 60px;
+}
+
+.product {
+    width: 100%;
+}
+
+.more {
+    display: flex;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.pro-image {
+    width: 40%;
+}
+
+/* .pro-image img{
+    height: 100%;
+} */
+.more:nth-child(1) .pro-image {
+    background: url(../images/landing-sec4/sec4-car-cleaner.png);
+    background-size: cover;
+}
+
+.more:nth-child(2) .pro-image {
+    background: url(../images/landing-sec4/sec4-bicycle-cleaner.png);
+    background-size: cover;
+}
+
+.more:nth-child(3) .pro-image {
+    background: url(../images/landing-sec4/sec4-carbon-cleaner.png);
+    background-size: cover;
+}
+
+.more:nth-child(4) .pro-image {
+    background: url(../images/landing-sec4/sec4-sale.jpg) center center;
+    background-size: cover;
+}
+
+.pro-desc {
+    width: 60%;
+    background: #fff;
+    padding: 75px 35px;
+}
+
+.pro-desc img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.pro-btn {
+    width: 100%;
+    height: 75px;
+    border: 3px solid #0048eb;
+    color: #0048eb;
+    text-align: center;
+    font-size: 40px;
+    line-height: 65px;
+    background: #ebebeb;
+    font-weight: bold;
+}
+
+.more:hover .pro-btn {
+    background: #0048eb;
+    color: #fff;
+    transition: 0.5s;
+}
+.more:active .pro-btn {
+    background: #0048eb;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.more:hover .pro-image {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.more:active .pro-image {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+/* Section-05 */
+.sec5 {
+    background: #0048eb;
+    margin-bottom: 50px;
+}
+
+.sec5-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.sec5 .main-txt {
+    width: 55%;
+}
+
+.sec5 .main-txt img {
+    width: 100%;
+}
+.sec5 .event{
+    overflow: hidden;
+}
+.sec5 .left {
+    width: 60%;
+    float: left;
+}
+
+.sec5 .left p {
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.sec5 .left b {
+    font-size: 30px;
+    text-decoration: underline #fff;
+}
+
+.sec5 strong {
+    font-size: 22px;
+    color: #fff;
+}
+
+.sec5 a {
+    margin-top: 30px;
+    display: block;
+    width: 90%;
+    height: 75px;
+    border: 3px solid #fff;
+    text-align: center;
+    line-height: 65px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sec5 a:hover {
+    background: #fff;
+    color: #0048eb;
+    transition: 0.5s;
+}
+.sec5 a:active {
+    background: #fff;
+    color: #0048eb;
+    transition: 0.5s;
+}
+
+.sec5 .right {
+    width: 40%;
+    padding: 0 6%;
+    float: right;
+}
+
+.sec5 .right img {
+    width: 100%;
+}

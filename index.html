@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>최민지 포트폴리오</title>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- Wow -->
+  <script src="js/plugin/WOW-master/wow.min.js"></script>
+  <link rel="stylesheet" href="js/plugin/WOW-master/animate.css">
+  <!-- Fetherlight -->
+  <script src="js/plugin/featherlight/featherlight.js"></script>
+  <link rel="stylesheet" href="js/plugin/featherlight/featherlight.css">
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- Lottie Animation -->
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <!-- Custom -->
+  <script src="custom.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <!-- vendor prefix plugin-->
+  <script src="js/plugin/prefixfree.min.js"></script>
+  <!-- favicon -->
+  <link rel="icon" href="images/favicon-32x32-2.png">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <header>
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="">minji portfolio</a>
+        </h1>
+        <div class="gnb">
+          <a href="#home" class="active">home</a>
+          <a href="#about">about</a>
+          <a href="#skill">skill</a>
+          <a href="#portfolio">portfolio</a>
+          <a href="#epilogue">epilogue</a>
+        </div>
+      </div>
+    </header>
+
+    <a href="#" class="gototop-btn">
+      <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24.8338 16.6664L42.6581 32.2471C43.074 32.6106 43.1164 33.2423 42.7529 33.6581C42.3894 34.074 41.7577 34.1164 41.3419 33.7529L24.8462 19.3337L8.66514 33.7467C8.25274 34.1141 7.62063 34.0776 7.25329 33.6652C6.88594 33.2527 6.92247 32.6206 7.33488 32.2533L24.8338 16.6664Z"
+          fill="#000000" />
+      </svg>
+
+    </a>
+
+    <!-- <button id="themeSwitch">COLOR MODE</button> -->
+    <input type="checkbox" id="themeSwitch">
+    <label for="themeSwitch" class="switch_label">
+      <svg width="50" height="50" viewBox="0 0 50 50" fill="black" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24 8C24.5523 8 25 8.44772 25 9L25 11C25 11.5523 24.5523 12 24 12C23.4477 12 23 11.5523 23 11L23 9C23 8.44772 23.4477 8 24 8Z"
+          fill="#000000" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M15.5001 39.7225C15.0218 39.4463 14.8579 38.8347 15.134 38.3564L16.134 36.6244C16.4102 36.1461 17.0218 35.9822 17.5001 36.2584C17.9784 36.5345 18.1422 37.1461 17.8661 37.6244L16.8661 39.3564C16.5899 39.8347 15.9784 39.9986 15.5001 39.7225Z"
+          fill="#000000" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M9.27759 33.5C9.00145 33.0217 9.16532 32.4101 9.64361 32.134L11.3757 31.134C11.854 30.8578 12.4655 31.0217 12.7417 31.5C13.0178 31.9783 12.854 32.5899 12.3757 32.866L10.6436 33.866C10.1653 34.1422 9.55373 33.9783 9.27759 33.5Z"
+          fill="#000000" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M7 25C7 24.4477 7.44772 24 8 24L10 24C10.5523 24 11 24.4477 11 25C11 25.5523 10.5523 26 10 26L8 26C7.44772 26 7 25.5523 7 25Z"
+          fill="#000000" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M9.27759 16.5C9.55373 16.0217 10.1653 15.8578 10.6436 16.134L12.3757 17.134C12.854 17.4101 13.0178 18.0217 12.7417 18.5C12.4655 18.9783 11.854 19.1422 11.3757 18.866L9.64361 17.866C9.16532 17.5899 9.00145 16.9783 9.27759 16.5Z"
+          fill="#000000" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M15.4999 10.2775C15.9782 10.0014 16.5898 10.1653 16.866 10.6436L17.866 12.3756C18.1421 12.8539 17.9782 13.4655 17.4999 13.7416C17.0216 14.0178 16.4101 13.8539 16.1339 13.3756L15.1339 11.6436C14.8578 11.1653 15.0216 10.5537 15.4999 10.2775Z"
+          fill="#000000" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M24 38C24.5523 38 25 38.4477 25 39L25 41C25 41.5523 24.5523 42 24 42C23.4477 42 23 41.5523 23 41L23 39C23 38.4477 23.4477 38 24 38Z"
+          fill="#000000" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M32 34C36.9706 34 41 29.9706 41 25C41 20.0294 36.9706 16 32 16C27.0294 16 23 20.0294 23 25C23 29.9706 27.0294 34 32 34ZM32 36C38.0751 36 43 31.0751 43 25C43 18.9249 38.0751 14 32 14C25.9249 14 21 18.9249 21 25C21 31.0751 25.9249 36 32 36Z"
+          fill="#000000" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M25.5006 33.8755C25.0126 33.9574 24.5113 34 24 34C19.0294 34 15 29.9706 15 25C15 20.0294 19.0294 16 24 16C24.5113 16 25.0126 16.0426 25.5006 16.1245C26.2646 15.5641 27.1037 15.0999 28 14.7499C26.7603 14.2657 25.4112 14 24 14C17.9249 14 13 18.9249 13 25C13 31.0751 17.9249 36 24 36C25.4112 36 26.7603 35.7343 28 35.2501C27.1037 34.9001 26.2646 34.4359 25.5006 33.8755Z"
+          fill="#000000" />
+      </svg>
+    </label>
+
+    <div class="trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <section id="home" class="target">
+      <div class="section-inner home-inner">
+        <div class="main-txt">
+          <!-- 메인 텍스트 애니메이션 -->
+          <svg viewBox="0 0 834 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="delay-txt"
+              d="M833.263 189.424V205.642H820.967V251.54H802.099V205.642H789.803V189.424H802.099V170.98H820.967V189.424H833.263Z"
+              fill="black" />
+            <path
+              d="M771.622 159.426C778.3 159.426 783.176 164.302 783.176 170.98C783.176 177.658 778.3 182.534 771.622 182.534C764.944 182.534 760.068 177.658 760.068 170.98C760.068 164.302 764.944 159.426 771.622 159.426ZM781.056 189.424V251.752H762.188V189.424H781.056Z"
+              fill="#FFEF42" />
+            <path class="delay-txt"
+              d="M688.458 187.94C707.644 187.94 721.424 201.614 721.424 220.482C721.424 239.35 707.644 253.024 688.458 253.024C669.272 253.024 655.492 239.35 655.492 220.482C655.492 201.614 669.272 187.94 688.458 187.94ZM688.458 204.052C679.554 204.052 673.724 210.942 673.724 220.482C673.724 230.022 679.554 236.912 688.458 236.912C697.362 236.912 703.192 230.022 703.192 220.482C703.192 210.942 697.362 204.052 688.458 204.052Z"
+              fill="black" />
+            <path class="delay-txt"
+              d="M607.755 253.024C589.947 253.024 577.545 239.35 577.545 220.482C577.545 201.614 589.947 187.94 607.755 187.94C615.917 187.94 621.853 190.802 625.563 195.784V162.5H644.431V251.54H625.563V245.18C621.853 250.162 615.917 253.024 607.755 253.024ZM610.723 236.912C619.945 236.912 625.881 230.022 625.881 220.482C625.881 210.942 619.945 204.052 610.723 204.052C601.713 204.052 595.989 210.942 595.989 220.482C595.989 230.022 601.713 236.912 610.723 236.912Z"
+              fill="black" />
+            <path class="delay-txt"
+              d="M542.177 189.424V205.642H529.881V251.54H511.013V205.642H498.717V189.424H511.013V170.98H529.881V189.424H542.177Z"
+              fill="black" />
+            <path class="delay-txt"
+              d="M464.154 187.94C479.63 187.94 491.82 195.784 492.562 208.08H474.33C473.694 204.264 469.348 201.932 463.836 201.932C458.112 201.932 453.978 203.946 453.978 206.702C453.978 209.776 458.112 211.26 468.712 212.956C487.05 215.712 493.622 221.754 493.622 232.46C493.622 245.18 480.266 253.024 464.472 253.024C448.254 253.024 435.958 244.968 435.322 231.93H453.554C454.19 235.958 458.854 238.608 464.79 238.608C470.832 238.608 475.284 236.382 475.284 233.52C475.284 230.552 471.044 228.644 460.338 227.054C445.498 224.828 435.746 220.27 435.746 207.656C435.746 195.572 448.36 187.94 464.154 187.94Z"
+              fill="black" />
+            <path class="delay-txt"
+              d="M387.697 253.024C373.281 253.024 363.423 242.53 363.423 225.358V189.424H382.291V222.178C382.291 231.612 386.107 236.806 393.209 236.806C400.629 236.806 405.081 230.976 405.081 221.33V189.424H423.949V251.54H405.081V245.18C401.371 250.162 395.647 253.024 387.697 253.024Z"
+              fill="black" />
+            <path
+              d="M282.463 222.814H301.755C301.755 229.174 306.843 236.276 316.383 236.276C325.923 236.276 331.647 229.598 331.647 219.634V165.15H350.939V219.634C350.939 240.304 337.159 253.66 316.383 253.66C295.607 253.66 282.675 239.986 282.463 222.814Z"
+              fill="#FFEF42" />
+            <path class="delay-txt" d="M829.915 73.566L823.343 101.02H809.245L813.061 73.566H829.915Z" fill="black" />
+            <path class="delay-txt"
+              d="M764.794 119.888C746.35 119.888 736.174 109.394 734.16 97.416H753.24C754.194 101.444 757.798 103.988 764.794 103.988C772.638 103.988 777.938 98.9 777.938 91.162V84.59C774.228 89.572 768.292 92.434 760.13 92.434C742.322 92.434 729.92 79.184 729.92 60.952C729.92 42.402 742.322 28.94 760.13 28.94C768.292 28.94 774.228 31.802 777.938 36.784V30.424H796.806V91.374C796.806 108.228 783.344 119.888 764.794 119.888ZM763.098 76.852C772.32 76.852 778.256 70.174 778.256 60.952C778.256 51.73 772.32 45.052 763.098 45.052C754.088 45.052 748.364 51.73 748.364 60.952C748.364 70.174 754.088 76.852 763.098 76.852Z"
+              fill="black" />
+            <path class="delay-txt"
+              d="M659.811 92.54V30.424H678.679V36.784C682.389 31.802 688.113 28.94 696.063 28.94C710.479 28.94 720.337 39.434 720.337 56.606V92.54H701.469V59.786C701.469 50.352 697.653 45.158 690.551 45.158C683.131 45.158 678.679 50.988 678.679 60.634V92.54H659.811Z"
+              fill="black" />
+            <path class="delay-txt"
+              d="M636.223 0.425995C642.901 0.425995 647.777 5.302 647.777 11.98C647.777 18.658 642.901 23.534 636.223 23.534C629.545 23.534 624.669 18.658 624.669 11.98C624.669 5.302 629.545 0.425995 636.223 0.425995ZM645.657 30.424V92.752H626.789V30.424H645.657Z"
+              fill="black" />
+            <path class="delay-txt"
+              d="M599.412 30.424H618.174L597.398 92.54H578.424L567.188 57.03L556.058 92.54H537.19L516.414 30.424H536.342L547.366 70.386L558.178 30.424H577.47L588.388 70.598L599.412 30.424Z"
+              fill="black" />
+            <path class="delay-txt"
+              d="M480.806 28.94C499.992 28.94 513.772 42.614 513.772 61.482C513.772 80.35 499.992 94.024 480.806 94.024C461.62 94.024 447.84 80.35 447.84 61.482C447.84 42.614 461.62 28.94 480.806 28.94ZM480.806 45.052C471.902 45.052 466.072 51.942 466.072 61.482C466.072 71.022 471.902 77.912 480.806 77.912C489.71 77.912 495.54 71.022 495.54 61.482C495.54 51.942 489.71 45.052 480.806 45.052Z"
+              fill="black" />
+            <path class="delay-txt" d="M436.867 3.5V92.54H417.999V3.5H436.867Z" fill="black" />
+            <path class="delay-txt"
+              d="M376.727 94.024C368.565 94.024 362.629 91.162 358.919 86.18V92.54H340.051V3.5H358.919V36.784C362.629 31.802 368.565 28.94 376.727 28.94C394.535 28.94 406.937 42.614 406.937 61.482C406.937 80.35 394.535 94.024 376.727 94.024ZM373.759 77.912C382.769 77.912 388.493 71.022 388.493 61.482C388.493 51.942 382.769 45.052 373.759 45.052C364.537 45.052 358.601 51.942 358.601 61.482C358.601 71.022 364.537 77.912 373.759 77.912Z"
+              fill="black" />
+            <path class="delay-txt" d="M287.618 43.144H328.216V59.044H287.618V43.144Z" fill="black" />
+            <path class="delay-txt"
+              d="M239.032 94.024C221.224 94.024 208.822 80.35 208.822 61.482C208.822 42.614 221.224 28.94 239.032 28.94C247.194 28.94 253.13 31.802 256.84 36.784V3.5H275.708V92.54H256.84V86.18C253.13 91.162 247.194 94.024 239.032 94.024ZM242 77.912C251.222 77.912 257.158 71.022 257.158 61.482C257.158 51.942 251.222 45.052 242 45.052C232.99 45.052 227.266 51.942 227.266 61.482C227.266 71.022 232.99 77.912 242 77.912Z"
+              fill="black" />
+            <path
+              d="M138.713 92.54V30.424H157.581V36.784C161.291 31.802 167.015 28.94 174.965 28.94C189.381 28.94 199.239 39.434 199.239 56.606V92.54H180.371V59.786C180.371 50.352 176.555 45.158 169.453 45.158C162.033 45.158 157.581 50.988 157.581 60.634V92.54H138.713Z"
+              fill="#FFEF42" />
+            <path
+              d="M115.126 0.425995C121.804 0.425995 126.68 5.302 126.68 11.98C126.68 18.658 121.804 23.534 115.126 23.534C108.448 23.534 103.572 18.658 103.572 11.98C103.572 5.302 108.448 0.425995 115.126 0.425995ZM124.56 30.424V92.752H105.692V30.424H124.56Z"
+              fill="#FFEF42" />
+            <path
+              d="M0.635986 92.54V6.14999H16.006L45.792 54.486L75.578 6.14999H90.948V92.54H71.656V45.158L51.622 78.336H39.962L19.928 45.158V92.54H0.635986Z"
+              fill="#FFEF42" />
+          </svg>
+
+        </div>
+        <!-- Lottie Animation -->
+        <div class="lottie-scroll-animation">
+          <dotlottie-player class="scroll-anim"
+            src="https://lottie.host/5afa55f1-4989-425c-ac1b-9067f87a53d6/I6nW9qLLQG.json" background="transparent"
+            speed="1" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scrollTop = $(document).scrollTop();
+          var wheelAnimation = $(
+            ".lottie-scroll-animation .scroll-anim"
+          );
+          if (scrollTop > 150) {
+            $(wheelAnimation).css({
+              opacity: "0",
+              transition: "0",
+              transform: "translate(0 100px)",
+            });
+          } else {
+            $(wheelAnimation).css({
+              opacity: "0.5",
+              transition: "0",
+              transform: "translate(0 0px)",
+            });
+          }
+        });
+      });
+    </script>
+
+    <section id="about" class="target">
+      <!-- rolling banner -->
+      <div class="keyword-banner">
+        <ul class="first-banner">
+          <li>#ux/ui</li>
+          <li>#web_design</li>
+          <li>#publishing</li>
+          <li>#html</li>
+          <li>#css</li>
+          <li>#javascript</li>
+          <li>#jquery</li>
+          <li>#ux/ui</li>
+          <li>#web_design</li>
+          <li>#publishing</li>
+          <li>#html</li>
+          <li>#css</li>
+          <li>#javascript</li>
+          <li>#jquery</li>
+          <li>#ux/ui</li>
+          <li>#web_design</li>
+          <li>#publishing</li>
+          <li>#html</li>
+          <li>#css</li>
+          <li>#javascript</li>
+          <li>#jquery</li>
+          <li>#ux/ui</li>
+          <li>#web_design</li>
+          <li>#publishing</li>
+          <li>#html</li>
+          <li>#css</li>
+          <li>#javascript</li>
+          <li>#jquery</li>
+        </ul>
+        <ul class="second-banner">
+          <li>#ux/ui</li>
+          <li>#web_design</li>
+          <li>#publishing</li>
+          <li>#html</li>
+          <li>#css</li>
+          <li>#javascript</li>
+          <li>#jquery</li>
+          <li>#ux/ui</li>
+          <li>#web_design</li>
+          <li>#publishing</li>
+          <li>#html</li>
+          <li>#css</li>
+          <li>#javascript</li>
+          <li>#jquery</li>
+          <li>#ux/ui</li>
+          <li>#web_design</li>
+          <li>#publishing</li>
+          <li>#html</li>
+          <li>#css</li>
+          <li>#javascript</li>
+          <li>#jquery</li>
+          <li>#ux/ui</li>
+          <li>#web_design</li>
+          <li>#publishing</li>
+          <li>#html</li>
+          <li>#css</li>
+          <li>#javascript</li>
+          <li>#jquery</li>
+        </ul>
+      </div>
+      <div class="section-inner about-inner">
+        <div class="about-desc">
+          <div class="wow main-txt">
+            <h2>
+              안녕하세요, <br>
+              하고 싶은 것은 해내고 마는 <br>
+              <strong>신입 퍼블리셔</strong>
+              <b>최민지</b> 입니다.
+            </h2>
+            <div class="sub-txt">
+              <p>
+                좋아하는 일을 위해 정체되어있지 않고, <br>
+                새로운 아이디어를 떠올리는 과정을 즐기며 <br>
+                문제 해결을 위해 항상 생각합니다.
+              </p>
+              <br>
+              <p>
+                디자이너에서 이제는 신입 웹 퍼블리셔로, <br>
+                더 나아가 프론트엔드 개발자가 되기 위한 <br>
+                노력의 과정을 즐기며 성장하겠습니다 :)
+              </p>
+            </div>
+          </div>
+          <div class="wow main-image"></div>
+        </div>
+        <div class="profile">
+          <div class="wow">
+            <b>graduate</b>
+            <span></span>
+            <ul>
+              <li>강원대학교 디자인학부 졸업</li>
+              <li>스마트기기 UX/UI 디자인 양성과정 수료</li>
+            </ul>
+          </div>
+          <div class="wow">
+            <b>certificate</b>
+            <span></span>
+            <ul>
+              <li>웹디자인 기능사</li>
+              <li>ACA Photoshop CS6</li>
+              <li>ACA Premiere Pro CS6</li>
+            </ul>
+          </div>
+          <div class="wow">
+            <b>award</b>
+            <span></span>
+            <ul>
+              <li>한국철도공사 주관 공모전 대상</li>
+              <li>중소기업중앙회 주관 공모전 대상</li>
+              <li>횡성군 주관 공모전 대상</li>
+              <li>한국옥외광고센터 주관 공모전 입선</li>
+              <li>제일기획 주관 공모전 파이널리스트</li>
+            </ul>
+          </div>
+          <div class="wow">
+            <b>EXPERIENCE</b>
+            <span></span>
+            <ul>
+              <li>청강문화산업대학교 디자인센터</li>
+              <li>와이케이스튜디오</li>
+              <li>진스토리코리아</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <section id="skill" class="target">
+      <div class="section-inner skill-inner">
+        <div class="skill-con">
+          <h3 class="wow">skill</h3>
+          <div class="skill-desc">
+            <div>
+              <div class="icon">
+                <div><img src="images/skill/skill-icon-html5.png" alt="html5 아이콘"></div>
+              </div>
+              <p>
+                웹 표준과 웹 접근성을 준수하는 HTML 정보 구조설계로 웹사이트 퍼블리싱을 하고 있습니다. 특히 웹 표준을 위해 HTML5에서 권장하는 시맨틱 태그를 사용해 전체
+                레이아웃을 설계합니다. 웹 UI디자인 작업 후 클래스 네임과 함께 HTML 정보 구조설계를 꼼꼼히 작업한 후 퍼블리싱 작업을 진행합니다. 웹사이트를 퍼블리싱 하기 전에 ‘기능정의서’를
+                만들고
+                기능정의서에 전체적인 폰트 서식, 컬러 가이드, 사이즈 정보, HTML 와이어프레임, 구현되어야 할 기능들까지 꼼꼼하게 미리 정리해 놓고 체계적인 퍼블리싱 작업을 수행합니다.
+              </p>
+            </div>
+            <div>
+              <div class="icon">
+                <div><img src="images/skill/skill-icon-css3.png" alt="css3 아이콘"></div>
+                <div><img src="images/skill/skill-icon-scss.svg" alt="scss 아이콘"></div>
+              </div>
+              <p>
+                CSS 코딩은 IE를 지원도 충분히 고려하는 크로스브라우징(Cross Browsing)을 위해 안정적인 CSS 속성을 사용해서 HTML Elements를 배치하고 디자인합니다.
+                특별한 경우 CSS3에서 새롭게 지원하는 속성을 활용해서 좀 더 다양한 CSS 배치와 디자인을 합니다.
+              </p>
+            </div>
+            <div>
+              <div class="icon">
+                <div><img src="images/skill/skill-icon-js.png" alt="자바스크립트 아이콘"></div>
+                <div><img src="images/skill/skill-icon-jquery.png" alt="제이쿼리 아이콘"></div>
+              </div>
+              <p>
+                네비게이션, 탭 메뉴, 어코디언 등 웹 퍼블리싱에 반드시 필요한 상호작용을 위한 제이쿼리는 플러그인을 사용하지 않고 순수한 코딩으로 제작합니다. 필수적인 자바스크립트 활용은 가능하며 주로
+                제이쿼리와 병행해서 활용합니다. (if 조건문, for 반복문 등)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-con">
+          <h3 class="wow">how</h3>
+          <div class="skill-desc">
+            <div>
+              <h6>Responsive Web</h6>
+              <p>
+                반응형 웹 제작에 있어서 크로스브라우징(Cross Browsing)을 위해 안정적인 기존 방식인 float, position, Media Query를 활용한 반응형 웹 제작 경험을 충분히
+                가지고 있습니다. 필요에 따라 플렉스(Flex)와 그리드(Grid) 방식으로 반응형 웹 사이트 제작도 가능합니다. 대부분 기존 방식으로 제작하지만 모바일 웹 앱 제작의 경우 Flex 또는
+                Grid를 충분히 활용해서 제작합니다.
+              </p>
+            </div>
+            <div>
+              <h6>Mobile Web App</h6>
+              <p>
+                모바일 우선을 위해 Mobile First에 준하는 모바일 웹 앱 제작 경험도 가지고 있습니다.
+                UI/UX 측면에서 미적인 디자인 뿐만 아니라 모바일 사용자 경험의 최적화를 위해 효율적인 컨텐츠를 배치를 우선적으로 생각하며 화면을 구성합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-con">
+          <h3 class="wow">tool</h3>
+          <div class="skill-desc">
+            <div>
+              <div class="icon">
+                <div><img src="images/skill/skill-icon-figma.png" alt="figma 아이콘"></div>
+                <div><img src="images/skill/skill-icon-ai.png" alt="illustrator 아이콘"></div>
+                <div><img src="images/skill/skill-icon-ps.png" alt="Photoshop 아이콘"></div>
+                <div><img src="images/skill/skill-icon-xd.png" alt="XD 아이콘"></div>
+                <div><img src="images/skill/skill-icon-pr.png" alt="premiere 아이콘"></div>
+                <div><img src="images/skill/skill-icon-ae.png" alt="after effect 아이콘"></div>
+              </div>
+              <p>
+                웹사이트 UI 디자인 작업은 포토샵과 피그마, xd를 활용하며 웹 UI 디자인 작업을 위한 능력은 충분하다고 생각합니다. 또한, 홈페이지에 필요한 부가적인 디자인 요소들을 제작하기 위한
+                포토샵과 일러스트 사용에 익숙합니다. 컷편집, 자막, 트랜지션, 기본적인 모션그래픽 등 기본적인 영상편집 및 제작은 프리미어를 활용합니다.
+              </p>
+            </div>
+            <div>
+              <div class="icon">
+                <div><img src="images/skill/skill-icon-vscode.png" alt="vs code 아이콘"></div>
+                <div><img src="images/skill/skill-icon-brackets.png" alt="brackets 아이콘"></div>
+                <div><img src="images/skill/skill-icon-git.png" alt="git 아이콘"></div>
+              </div>
+              <p>
+                텍스트에디터는 Visual Studio Code를 메인으로 사용하며 경우에 따라 Adobe Brackets를 병행해서 사용합니다. 팀원들과의 효율적인 작업을 위해 Git/GitHub도
+                공부하고 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="target">
+      <div class="section-inner portfolio-inner">
+        <div class="wow main-txt">
+          <h3>portfolio</h3>
+        </div>
+        <div class="web-publishing">
+          <div class="web-publishing-inner">
+            <!-- <h4 class="wow">web publishing</h4> -->
+            <div class="tab-cont">
+              <div class="tab-cont-inner swiper-container">
+                <div class="web-tabs swiper-wrapper">
+                  <!-- Genestory -->
+                  <div class="web-cont swiper-slide">
+                    <h5 class="title"><span>company project</span></h5>
+                    <div class="cont-inner">
+                      <div>
+                        <div class="wow mockup-image">
+                          <img src="images/portfolio-web/genestory/mockup-01.png" alt="목업1">
+                        </div>
+                        <div class="desc">
+                          <h6 class="wow">진스토리코리아
+                            <b>외국계 바이오/에듀 스타트업</b>
+                          </h6>
+                          <div class="desc-txt">
+                            <ul class="wow">
+                              <li>Genestory 자사몰 제작</li>
+                              <li>Genestory Global 소개 홈페이지 제작</li>
+                              <li>Genestory Korea 소개 홈페이지 제작</li>
+                            </ul>
+                            <div class="wow work">
+                              <div class="tech">
+                                <div>
+                                  <div>Publishing</div>
+                                  <div>HTML + CSS + jQUERY</div>
+                                </div>
+                                <div>
+                                  <div>UI Design</div>
+                                  <div>Figma</div>
+                                </div>
+                                <div>
+                                  <div>Slider</div>
+                                  <div>javaScript / jQuery</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="more">
+                            <a href="https://shopgenestory.com/" class="wow view-btn"
+                              data-featherlight="iframe">shop</a>
+                            <a href="https://genestorysg.com/" class="wow view-btn"
+                              data-featherlight="iframe">global</a>
+                            <a href="https://genestorykr.com/" class="wow view-btn" data-featherlight="iframe">korea</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Gongcha -->
+                  <div class="web-cont swiper-slide">
+                    <h5 class="title"><span>renewal web</span></h5>
+                    <div class="cont-inner">
+                      <div>
+                        <div class="wow mockup-image">
+                          <img src="images/portfolio-web/gongcha/mockup-01.png" alt="목업1">
+                        </div>
+                        <div class="desc">
+                          <h6 class="wow">공차
+                            <b>글로벌 티 음료 전문 브랜드</b>
+                          </h6>
+                          <div class="desc-txt">
+                            <ul class="wow">
+                              <li>scroll에 따른 header의 변화</li>
+                              <li>if문을 활용한 setInterval 자동 슬라이드 구현</li>
+                              <li>siblings를 활용한 FadeIn&Out</li>
+                            </ul>
+                            <div class="wow work">
+                              <div class="tech">
+                                <div>
+                                  <div>Publishing</div>
+                                  <div>HTML + CSS + jQUERY</div>
+                                </div>
+                                <div>
+                                  <div>UI Design</div>
+                                  <div>Figma</div>
+                                </div>
+                                <div>
+                                  <div>Slider</div>
+                                  <div>javaScript / jQuery</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div class="desc-txt">
+                          <div class="more">
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/gongcha/index.html"
+                              class="wow view-btn" data-featherlight="iframe">pc</a>
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/gongcha/mobile-portfolio.html"
+                              class="wow view-btn" data-featherlight="iframe">mobile</a>
+                            <a href="portfolio/website-works/gongcha/definition.pdf" class="wow view-btn"
+                              data-featherlight="iframe">definition</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Yk studio -->
+                  <div class="web-cont swiper-slide">
+                    <h5 class="title"><span>Web Branding</span></h5>
+                    <div class="cont-inner">
+                      <div>
+                        <div class="wow mockup-image">
+                          <img src="images/portfolio-web/ykstudio/mockup-01.png" alt="목업1">
+                        </div>
+                        <div class="desc">
+                          <h6 class="wow">와이케이스튜디오
+                            <b>광고대행사</b>
+                          </h6>
+                          <div class="desc-txt">
+                            <ul class="wow">
+                              <li>radio 버튼과 each문을 활용한 filter 이벤트 구현</li>
+                              <li>광고대행사라는 업종 특성상 lightbox를 활용해 고객들이 웹사이트에 오래 머무를 수 있게 제작</li>
+                              <li>로고/포스터/상세페이지 제작</li>
+                            </ul>
+                            <div class="wow work">
+                              <div class="tech">
+                                <div>
+                                  <div>Publishing</div>
+                                  <div>HTML + CSS + jQUERY</div>
+                                </div>
+                                <div>
+                                  <div>UI Design</div>
+                                  <div>XD</div>
+                                </div>
+                                <div>
+                                  <div>Slider</div>
+                                  <div>javaScript / jQuery</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="more">
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/ykstudio/index.html"
+                              class="wow view-btn" data-featherlight="iframe">pc</a>
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/ykstudio/mobile-portfolio.html"
+                              class="wow view-btn" data-featherlight="iframe">mobile</a>
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/ykstudio/definition.pdf"
+                              class="wow view-btn" data-featherlight="iframe">definition</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Osulloc -->
+                  <div class="web-cont swiper-slide">
+                    <h5 class="title"><span>renewal web</span></h5>
+                    <div class="cont-inner">
+                      <div>
+                        <div class="wow mockup-image">
+                          <img src="images/portfolio-web/osulloc/mockup-01.png" alt="목업1">
+                        </div>
+                        <div class="desc">
+                          <h6 class="wow">오설록
+                            <b>오설록, 차와 제주가 선사하는 가치 있는 쉼</b>
+                          </h6>
+                          <div class="desc-txt">
+                            <ul class="wow">
+                              <li>배열을 활용한 background-image push</li>
+                              <li>Append를 활용한 슬라이드 클릭 이벤트 구현</li>
+                              <li>input요소와 javaScript를 활용한 로그인/회원가입 페이지 구현</li>
+                            </ul>
+                            <div class="wow work">
+                              <div class="tech">
+                                <div>
+                                  <div>Publishing</div>
+                                  <div>HTML + CSS + jQUERY</div>
+                                </div>
+                                <div>
+                                  <div>UI Design</div>
+                                  <div>XD</div>
+                                </div>
+                                <div>
+                                  <div>Slider</div>
+                                  <div>javaScript / jQuery</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="more">
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/osulloc/html/join.html"
+                              class="wow view-btn" data-featherlight="iframe">main</a>
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/osulloc/html/login.html"
+                              class="wow view-btn" data-featherlight="iframe">login</a>
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/osulloc/html/join.html"
+                              class="wow view-btn" data-featherlight="iframe">join</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Osaka kushikatsu -->
+                  <div class="web-cont swiper-slide">
+                    <h5 class="title"><span>landing page</span></h5>
+                    <div class="cont-inner">
+                      <div>
+                        <div class="wow mockup-image">
+                          <img src="images/portfolio-web/osaka-kushikatsu/mockup-01.png" alt="목업1">
+                        </div>
+                        <div class="desc">
+                          <h6 class="wow">오사카 꼬치마켓
+                            <b>배달 꼬치구이 전문점</b>
+                          </h6>
+                          <div class="desc-txt">
+                            <ul class="wow">
+                              <li>keyframe 애니메이션을 활용한 동적 화면 구성</li>
+                              <li>if문을 활용한 클릭이벤트 구현</li>
+                              <li>siblings와 addClass를 활용한 탭메뉴 구현</li>
+                              <li>라이브러리를 사용하지 않은 화면 너비에 따라 달라지는 스크롤 애니메이션 구현</li>
+                            </ul>
+                            <div class="wow work">
+                              <div class="tech">
+                                <div>
+                                  <div>Publishing</div>
+                                  <div>HTML + CSS + jQUERY</div>
+                                </div>
+                                <div>
+                                  <div>UI Design</div>
+                                  <div>XD</div>
+                                </div>
+                                <div>
+                                  <div>Slider</div>
+                                  <div>javaScript / jQuery</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="more">
+                            <a href="https://xn--vr0b64rfqf83fcol0eq8b.com/" class="wow view-btn"
+                              data-featherlight="iframe">pc</a>
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/osaka-kushikatsu/mobile-portfolio.html"
+                              class="wow view-btn" data-featherlight="iframe">mobile</a>
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/osaka-kushikatsu/definition.pdf"
+                              class="wow view-btn" data-featherlight="iframe">definition</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Cleaz -->
+                  <div class="web-cont swiper-slide">
+                    <h5 class="title"><span>landing page</span></h5>
+                    <div class="cont-inner">
+                      <div>
+                        <div class="wow mockup-image">
+                          <img src="images/portfolio-web/cleaz/mockup-01.png" alt="목업1">
+                        </div>
+                        <div class="desc">
+                          <h6 class="wow">클리즈
+                            <b>건강과 환경을 생각하는 마음을 담은 브랜드</b>
+                          </h6>
+                          <div class="desc-txt">
+                            <ul class="wow">
+                              <li>if문을 활용한 슬라이드 구현</li>
+                              <li>keyframe 애니메이션을 활용한 동적 화면 구성</li>
+                              <li>라이브러리를 사용하지 않은 화면 너비에 따라 달라지는 스크롤 애니메이션 구현</li>
+                            </ul>
+                            <div class="wow work">
+                              <div class="tech">
+                                <div>
+                                  <div>Publishing</div>
+                                  <div>HTML + CSS + jQUERY</div>
+                                </div>
+                                <div>
+                                  <div>UI Design</div>
+                                  <div>XD</div>
+                                </div>
+                                <div>
+                                  <div>Slider</div>
+                                  <div>javaScript / jQuery</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="more">
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/cleaz/index.html"
+                              class="wow view-btn" data-featherlight="iframe">pc</a>
+                            <a href="https://www.cleaz.kr/landing-page/index.html" class="wow view-btn"
+                              data-featherlight="iframe">mobile</a>
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/website-works/cleaz/definition.pdf"
+                              class="wow view-btn" data-featherlight="iframe">definition</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Daily hotel -->
+                  <div class="web-cont swiper-slide">
+                    <h5 class="title"><span>mobile web app</span></h5>
+                    <div class="cont-inner">
+                      <div>
+                        <div class="wow mockup-image">
+                          <img src="images/mobile-web-app/daily-hotel/mock-up-03.png" alt="목업1">
+                        </div>
+                        <div class="desc">
+                          <h6 class="wow">데일리 호텔
+                            <b>여행은 스타일대로!</b>
+                          </h6>
+                          <div class="desc-txt">
+                            <ul class="wow">
+                              <li>데일리호텔 어플을 사용하면서 불편했던 점들을 개선하여 리디자인 한 작업물입니다. 퀵메뉴와 헤더 메뉴를 고정시켜 페이지간의 이동 횟수를 줄였습니다.</li>
+                            </ul>
+                            <div class="wow work">
+                              <div class="tech">
+                                <div>
+                                  <div>Publishing</div>
+                                  <div>HTML + CSS + jQUERY</div>
+                                </div>
+                                <div>
+                                  <div>UI Design</div>
+                                  <div>Photoshop</div>
+                                </div>
+                                <div>
+                                  <div>Slider</div>
+                                  <div>Slick.js</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="more">
+                            <a href="http://brightwisdoms2.dothome.co.kr/portfolio/mobile-works/daily-hotel/mobile-portfolio.html"
+                              class="wow view-btn" data-featherlight="iframe">view</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        loop: false,
+        mousewheel: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        watchOverflow: true,
+        navigation: {
+          nextEl: '.swiper-next',
+          prevEl: '.swiper-prev'
+        },
+        on: {
+          slideChange: function () {
+            setTimeout(function () {
+              console.log("slideChange");
+              swiper.params.touchReleaseOnEdges = false;
+              swiper.params.mousewheel.releaseOnEdges = false;
+            });
+          },
+          reachEnd: function () {
+            setTimeout(function () {
+              console.log("reachEnd");
+
+              swiper.params.touchReleaseOnEdges = true;
+              swiper.params.mousewheel.releaseOnEdges = true;
+            }, 500);
+          },
+          reachBeginning: function () {
+            setTimeout(function () {
+              swiper.params.touchReleaseOnEdges = true;
+              swiper.params.mousewheel.releaseOnEdges = true;
+              console.log("reachBeginning");
+            }, 500);
+          },
+        },
+      })
+    </script>
+
+    <section id="graphic" class="target">
+      <div class="practical-graphic">
+        <div class="prac-grap-inner">
+          <div class="prac-grap-menu">
+            <ul class="wow tab-menu">
+              <h6>🛠 컨텐츠 정리중입니다 :) 🛠 <b>📌 GRAPHIC - Logo 완료</b></h6>
+              <li class="prac-publ">
+                <a href="#none" class="active">practical publishing</a>
+                <ul class="category">
+                  <li class="active">
+                    <a href="#none">hover effect</a>
+                  </li>
+                  <li>
+                    <a href="#none">keyframe animation</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="prac-grap">
+                <a href="#none">graphic</a>
+                <ul class="category">
+                  <li>
+                    <a href="#none">Logo</a>
+                  </li>
+                  <li>
+                    <a href="#none">Poster</a>
+                  </li>
+                  <li>
+                    <a href="#none">Character</a>
+                  </li>
+                  <li>
+                    <a href="#none">Web UI</a>
+                  </li>
+                  <li>
+                    <a href="#none">Product page</a>
+                  </li>
+                  <li>
+                    <a href="#none">SNS Banner</a>
+                  </li>
+                  <li>
+                    <a href="#none">Video</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="cont">
+            <div class="cont-inner">
+              <div class="prac-con">
+                <div>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                </div>
+
+              </div>
+              <div class="grap-con">
+                <div class="graphic-logo">
+                  <a href="http://brightwisdoms2.dothome.co.kr/portfolio/practical-graphic/graphic-works/logo/mateo.html"
+                    data-featherlight="iframe">
+                  </a>
+
+                  <a href="http://brightwisdoms2.dothome.co.kr/portfolio/practical-graphic/graphic-works/logo/ecoground.html"
+                    data-featherlight="iframe">
+                  </a>
+
+                  <a href="http://brightwisdoms2.dothome.co.kr/portfolio/practical-graphic/graphic-works/logo/mulgeum.html"
+                    data-featherlight="iframe">
+                  </a>
+
+                  <a href="http://brightwisdoms2.dothome.co.kr/portfolio/practical-graphic/graphic-works/logo/raon.html"
+                    data-featherlight="iframe">
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                  <a href="">
+                    <img src="" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="epilogue" class="target">
+      <div class="section-inner epilogue-inner">
+        <div class="wow main-txt">
+          <h2>
+            Publisher<strong>ming</strong><br>
+            width <b>Humility</b> and <b>Responsibility</b>
+          </h2>
+        </div>
+        <div class="wow main-image">
+        </div>
+        <div class="wow sub-txt">
+          <p>
+            <b>웹 퍼블리셔</b>라는 새로운 시작을 하게 되었습니다. <br>
+            그래서 더 <b>겸손하게</b> 배우려고 노력하고 있습니다. <br>
+            <b>책임감</b>을 가지고 <b>즐겁게</b> 함께 일하며 <b>필요로 하는 사람</b>이 되기 위해 노력할 것을 약속드립니다.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

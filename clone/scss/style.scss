@@ -1,0 +1,13 @@
+@import 'abstracts/variable'; //변수
+@import 'abstracts/mixin'; //믹스인
+
+@import 'base/reset.scss'; //리셋
+@import 'base/typography'; //텍스트
+
+@import 'component/search'; //검색
+@import 'component/gnb'; //메뉴
+@import 'component/megamenu'; //팝업메뉴
+@import 'component/button'; //버튼
+
+@import 'layout/header'
+//import 당하는 파일명에는 '_'언더바 꼭 붙여야 함

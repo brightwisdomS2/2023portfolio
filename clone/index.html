@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="타이어웹사이트 클론코딩">
+    <meta name="keyword" content="타이어사이트">
+    <meta name="author" content="최민지">
+    <!-- og 태그랑 twitter 도 넣어주면 좋음 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이어픽</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/global.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>
+            <a href=""><img src="" alt="타이어픽"></a>
+        </h1>
+        <div class="header__nav">
+            <h2 class="hide">검색</h2>
+            <div class="search">
+                <input type="search" placeholder="차량번호 / 상품명 / 사이즈 검색" title="검색어 입력">
+                <!-- placeholder 로는 input type="search"를 설명할 대체 수단이 되지 않으므로 title 을 넣어주는 것이 접근성 상 좋다-->
+                <button aria-label="검색" class="search__button">
+                    <!-- 상속되는 자식클래스는 __클래스명 으로 넣어준다(scss에서 &로 써주기 위해) --></button>
+                <!-- 돋보기 이미지를 배경이미지로 넣으려면 대체 텍스트를 꼭 써줘야 하는데 div class="hide" 로 '검색'이라는 텍스트를 넣어주는 것은 인라인 안에 블록태그가 들어가는 것이기 때문에 문법에 맞지 않음 -->
+                <!-- 이럴 경우 span 으로 대체 텍스트를 넣어줘도 되지만 aria-lable로 넣어주는 게 화면 낭독기가 해당 아이콘에 접근 했을 때 '검색'이라고 읽어주게 되므로 좋다' -->
+            </div>
+            <h2 class="hide">메뉴</h2>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="">타이어</a></li>
+                    <li><a href="">배터리</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="spot-menu">
+            <nav>
+                <ul>
+                    <li class="hidden" <a href="">이용안내</a></li>
+                    <li class="spot-menu__cart"><a href=""><span>장바구니</span></a></li>
+                    <li class="spot-menu__mypage"><a href=""><span>마이페이지</span></a></li>
+                    <li aria-hidden="true"><button class="btn-megamenu">전체메뉴</button></li>
+                    <!-- 해당 부분은 웹 사이즈에서는 보이지 않고 모바일 사이즈에서만 보이게 해야 함 -->
+                    <!-- aira-hidden을 쓰면 화면 낭독기가 읽지 않음 -->
+                    <li class="hidden"><a href="">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <aside class="megamenu">
+        <nav>
+            <ul>
+                <li data-last><a href="">로그인</a></li>
+                <li class="bold"><a href="">타이어</a></li>
+                <li class="bold"><a href="">배터리</a></li>
+                <li class="bold"><a href="">이벤트</a></li>
+                <li class="bold" data-lats><a href="">고객센터</a></li>
+                <li><a href="">마이페이지</a></li>
+                <li><a href="">장바구니</a></li>
+                <li><a href="">장착점 제휴신청</a></li>
+                <li data-last><a href="">이용안내</a></li>
+            </ul>
+        </nav>
+        <div class="app">
+            <div class="app__txt">
+                타이어픽 앱 설치하면 <span class="txt-purple">세차가 100원!</span>
+            </div>
+            <a href=""><img src="images/btn_ios.png" alt="앱스토어"></a>
+            <a href=""><img src="images/btn_android.png" alt="구글플레이"></a>
+        </div>
+        <button class="btn-close" aria-label="닫기"></button>
+    </aside>
+
+    <div class="dimmed"></div>
+</body>
+
+</html>

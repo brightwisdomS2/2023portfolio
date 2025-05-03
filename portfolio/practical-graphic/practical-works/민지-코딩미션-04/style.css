@@ -1,0 +1,237 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.container{
+    background: #fff;
+    position: relative;
+}
+section{
+    padding-top: 50px;
+}
+
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Header Active */
+header{
+    transition: 0.5s;
+
+}
+header.active{
+    background: #fff;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+header.active .nav1{
+    line-height: 70px;
+}
+header.active .trigger{
+    color: #000;
+}
+header.active .gnb a{
+    color: #000;
+}
+header.active .trigger:hover{
+    background: #f4f4f4;
+}
+header.active .lnb img{
+    transform: scale(0.8);
+}
+/* Nav */
+.nav1{
+    width: 1300px;
+    line-height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.lnb{
+    float: left;
+}
+.gnb{
+    float: right;
+}
+.lnb img{
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.lnb span{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/* Gnb */
+.gnb a{
+    margin-left: 15px;
+    transition: 0.5s;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    color: #fff;
+}
+.gnb a:hover{
+    color: #000;
+}
+
+/* Trigger */
+.trigger{
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: rgb(214, 214, 214);
+    transition: 0.5s;
+}
+.trigger:hover{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Section Welcome */
+.welcome{
+    height: 600px;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    position: relative;
+}
+.section-inner{
+    width: 1300px;
+    margin: auto;
+}
+.section-inner h3{
+    font-size: 3em;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.section-inner h3 span{
+    color: red;
+}
+.section-inner h3::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 15px;
+    background: gold;
+    z-index: -1;
+}
+
+
+.image-frame{
+    overflow: hidden;
+    border-radius: 50px 0px 50px 0px;
+}
+.image-frame img{
+    width: 100%;
+    transition: 0.7s;
+}
+.image-frame img:hover{
+    transform: scale(1.05);
+}
+
+
+
+.heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.heading h1{
+    font-size: 3em;
+}
+.heading p{
+    font-size: 1.7em;
+}
+
+
+footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+.footer-inner{
+    width: 1300px;
+    margin: auto;
+    padding: 30px;
+    overflow: hidden;
+}
+.footer-inner div{
+    float: left;
+}
+.footer-inner div:nth-child(1){
+    width: 20%;
+}
+.footer-inner div:nth-child(2){
+    width: 20%;
+}
+.footer-inner div:nth-child(3){
+    width: 60%;
+}
+.footer-inner div b{
+    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-inner div a{
+    color: #777;
+    display: block;
+}
+.footer-inner div p{
+    color: #777;
+}
+.btn-donate{
+    padding: 10px 15px;
+    font-size: 1em;
+    background: royalblue;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.gototop{
+    position: fixed;
+    right: 20px;
+    bottom: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.5em;
+    transition: 0.5s;
+    opacity: 0;
+}
+.gototop.active{
+    bottom: 20px;
+    opacity: 1;
+}

@@ -1,0 +1,396 @@
+html {}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+#wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    ;
+}
+
+section:first-child {
+    margin-top: 150px;
+}
+
+.section-inner {
+    padding: 20px;
+}
+
+/* ############# Section 01 ########### */
+.sec1 {
+    padding: 20px 0;
+}
+
+.sec1 .category {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.sec1 .category li {
+    width: 25%;
+    padding: 15px 0;
+}
+
+.sec1 .category li a {
+    text-align: center;
+    font-weight: 500;
+}
+
+.sec1 .category li a img {
+    padding: 10px 30px;
+}
+
+.sec1 .banner-slide {
+    width: 100%;
+    height: auto;
+    /* padding: 20px 0; */
+}
+
+.sec1 .banner-slide div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+/* ############# Section 01 ########### */
+.sec2 {
+    background: #e2e2e2;
+    padding: 20px;
+}
+
+.sec2 .gotojoin {
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.sec2 .gotojoin span {
+    display: inline-block;
+    width: 15%;
+}
+
+.sec2 .gotojoin span img {
+    width: 100%;
+}
+
+.sec2 .gotojoin p {
+    width: 75%;
+    line-height: 1.5em;
+    font-size: 18rem;
+    text-align: left;
+    padding: 0 10px;
+}
+.sec2 .gotojoin p b{
+    font-size: 16rem;
+}
+
+.sec2 .gotojoin .arrow-btn {
+    width: 10%;
+}
+
+.sec2 .gotojoin .arrow-btn ion-icon {
+    font-size: 35rem;
+    padding: 10px 0;
+}
+
+/* ############# Section 03 ########### */
+.sec3 {
+    padding: 50px 25px 30px;
+}
+
+.sec3 h2,
+.sec4 h2,
+.sec5 h2 {
+    font-size: 20rem;
+}
+
+.sec3 .category {
+    padding: 20px 0;
+    display: flex;
+}
+
+.sec3 .category li {}
+
+.sec3 .category li a {
+    padding: 5px 5px;
+    border: 1px solid #e2e2e2;
+    line-height: 18px;
+    border-radius: 18px;
+    margin-right: 3px;
+    transition: 0.3s;
+    font-weight: 400;
+}
+
+.sec3 .category li.active a{
+    background: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.sec3 .tabs {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.sec3 .tab {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+.sec3 .tab a {
+    padding: 5px 0 10px;
+    display: flex;
+}
+
+.sec3 .tab > a > span {
+    width: 25%;
+    height: 90px;
+    border-radius: 5px;
+    background: #efefef;
+    overflow: hidden;
+}
+.sec3 .tab > a > span img{
+    width: 150%;
+}
+
+.sec3 .tab a div {
+    width: 75%;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.sec3 .tab a div h4 {
+    font-size: 18rem;
+}
+
+.sec3 .tab a div strong {
+    display: block;
+    padding: 5px 0 7px;
+    font-size: 12rem;
+    font-weight: 400;
+}
+
+.sec3 .tab a div .star {
+    overflow: hidden;
+    line-height: 16px;
+    font-size: 15rem;
+}
+
+.sec3 .tab a div .star span {
+    float: left;
+    font-size: 20rem;
+    letter-spacing: -5px;
+}
+
+.sec3 .tab a div .star b {
+    float: left;
+    line-height: 26px;
+    padding-left: 8px;
+    font-weight: 400;
+}
+
+.sec3 .tab a div h5 {
+    display: block;
+    font-size: 16rem;
+    font-weight: 400;
+    text-align: right;
+    line-height: 1em;
+}
+
+.sec3 .tab a div h5 b {
+    font-weight: 800;
+    font-size: 20rem;
+    transform: translateY(3px);
+}
+
+.more-btn {
+    width: 35%;
+    line-height: 30px;
+    border-radius: 15px;
+    margin: auto;
+    border: 1px solid #e2e2e2;
+}
+
+/* ############# Section 04 ########### */
+#section4 {
+    border-top: 15px solid #e2e2e2;
+    border-bottom: 15px solid #e2e2e2;
+}
+
+.sec4 .premium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.sec4 .premium li {
+    padding: 30px 3px 0;
+    height: width;
+
+}
+
+.sec4 .premium li img {
+    width: 100px;
+    height: 100px;
+    background: #efefef;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.sec4 .premium li h5 {
+    line-height: 50px;
+    font-size: 16rem;
+    font-weight: 500;
+}
+
+/* ############# Section 05 ########### */
+.sec5{
+    padding: 40px 25px 30px;
+}
+.sec5 > b {
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.sec5 .discount {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.sec5 .discount-inner > div {
+
+}
+
+.sec5 .disc-image {
+    display: block;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sec5 .disc-image img{
+    width: 130%;
+}
+
+.sec5 .sub-txt {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 10px;
+    transform: translateY(-10px);
+}
+
+.sec5 .sub-txt .place {
+    float: left;
+}
+
+.sec5 .sub-txt .place h4 {
+    font-size: 18rem;
+}
+
+.sec5 .sub-txt .place strong {
+    line-height: 35px;
+    color: #8f8f8f;
+}
+
+.sec5 .sub-txt .price {
+    float: right;
+    text-align: right;
+}
+
+.sec5 .sub-txt .price>div {
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+}
+
+.sec5 .sub-txt .price>div h6 {
+    float: right;
+    color: #af0029;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.sec5 .sub-txt .price>div b {
+    float: right;
+    margin-left: 10px;
+    line-height: 25px;
+    color: #8f8f8f;
+    text-decoration:line-through;
+}
+
+.sec5 .sub-txt .price>div span {
+    float: right;
+    color: #af0029;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.sec5 .sub-txt .price>div span ion-icon{
+    color: #af0029;
+}
+
+.sec5 .sub-txt .price>div h5 {
+    float: right;
+    margin-left: 10px;
+    font-size: 20rem;
+    line-height: 25px;
+}
+
+/* ############# Section 06 ########### */
+.sec6{
+
+}
+
+.ad-banner{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.ad-banner p{
+    text-align: left;
+    float: left;
+    font-size: 20rem;
+    line-height: 1.5em;
+}
+.ad-banner span{
+    height: 60px;
+    float: right;
+    display: block;
+}
+.sec6 .ad-banner span > img{
+    width: fit-content;
+    height: 100% !important;
+}
+
+.ad-banner:nth-child(1){
+    background: #f8eaed;
+    margin-bottom: 10px;
+}
+.ad-banner:nth-child(2){
+    background: #e0ecc7;
+}

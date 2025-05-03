@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 40px 0;
+    @include mobile {
+        padding: 0 15px;
+    }
+    &__nav {
+        //__자식요소 선택
+        display: flex;
+        //행 배치를 위해 flex
+        align-items: center;
+        gap: 40px;
+        @include mobile {
+            //@media(min-width:0px) and (max-width:$web)
+            display: none;
+            //모바일에서는 사라지게
+        }
+    }
+}
+
+.logo {
+    font-size: 0;
+    //자식 요소인 a태그와 img 태그가 인라인 요소이기 때문에 스페이스 한 칸(mbsp)이 생기기 때문에 font-size:0으로 빈 공간을 없애준다.
+}
+
+.spot-menu {
+    // position: absolute;
+    // top: 0;
+    // //left:0 right:0 은 width:100%와 같은 의미 > 아래 선을 주기 위해
+    // left: 0;
+    // right: 0;
+    // 위 내용을 mixin 활용해서 만들면 아래와 같이 쓸 수 있다
+    @include position(left, 0, top, 0);
+    width: 100%;
+
+    border-bottom: 1px solid $greye7;
+    padding: 0 40px;
+    box-sizing: border-box;
+    @include mobile {
+        position: static;
+        //모바일에서 header__nav는 사라지고 spot-menu와 로고가 행 배치 되기 때문에 absolute에서 static으로 바꿔준다
+        border: none;
+        padding: 0;
+        a {
+            width: 45px;
+            height: 56px;
+        }
+        &__cart a {
+            @include bg("ico_cart.png, center");
+            //모바일에서는 이미지로 보이게
+        }
+        &__mypage a {
+            @include bg("ico_mypage.png, center");
+        }
+        span {
+            @include hide;
+        }
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        //주축을 오른쪽으로
+    }
+    ul {
+        display: flex;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        @include mobile {
+            height: auto;
+            &.hidden {
+                display: none;
+            }
+        }
+        + li {
+            //인접 형제 선택자이기 때문에 before로 해주면 마지막 형제에 별다른 처리 안해줘도 됨
+            display: flex;
+            align-items: center;
+            //flex 해주면 자식 요소가 block 요소로 바뀜
+            &::before {
+                content: "";
+                width: 2px;
+                height: 10px;
+                background: $greydd;
+                margin: 0 20px;
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+    a {
+        font-size: 14px;
+        color: $grey6f;
+    }
+    [aria-hidden] {
+        display: none;
+        //aria-hidden > display: none
+        @include mobile {
+            button {
+                @include bg("ico_menu.png" center);
+            }
+            display: flex;
+            //모바일에서는 보이게 해야함 + 세로 가운데 오게 하려면 flex
+        }
+    }
+}

@@ -1,0 +1,79 @@
+*{
+    text-align: left !important;
+}
+#wrapper{
+    width: 100%;
+    height: auto;
+}
+.my-page{
+    width: 100%;
+    padding: 30px;
+}
+.my-page h2{
+    font-size: 22rem;
+    text-align: center !important;
+    line-height: 1.5em;
+    padding: 20px 0;
+}
+.my-daily{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+.my-daily > a{
+    padding: 20px;
+    font-size: 18rem;
+    border-bottom: 1px solid #7f7f7f75;
+}
+.my-daily > a:last-child{
+    border: none;
+}
+.login{
+    overflow: hidden;
+    
+}
+.login div{
+    float: left;
+}
+.login b{
+    font-size: 14rem;
+    color: #7f7f7f;
+    font-weight: 400;
+    line-height: 2em;
+}
+.login h1{
+    color: #bb0f4a;
+    font-size: 20rem;
+}
+.my-page span{
+    float: right;
+}
+.join span ion-icon{
+    font-size: 22rem;
+}
+.login span ion-icon{
+    font-size: 22rem;
+    padding-top: 20px;
+    color: #bb0f4a;
+}
+#wrapper > a{
+    padding: 30px;
+    font-size: 18rem;
+    font-weight: 500;
+    color: #fff;
+    overflow: hidden;
+}
+.cs{
+    background: #bb0f4a;
+}
+.kakao-chat{
+    background: #f5e239;
+}
+#wrapper > a ion-icon{
+    color: #1f1b1b;
+}
+.cs span{
+    font-size: 14rem;
+    font-weight: 400;
+    float: right;
+}
