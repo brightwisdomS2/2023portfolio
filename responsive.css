@@ -52,7 +52,7 @@
   }
 
   #skill .icon {
-    height: 50px;
+    /* height: 50px; */
   }
 
   #skill .tool-inner>div:first-child img {

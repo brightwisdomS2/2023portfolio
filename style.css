@@ -506,12 +506,13 @@ h1.logo {
 
 #about .main-txt h2 {
   font-size: 40rem;
+  letter-spacing: -.5rem;
 }
 
 #about .main-txt .sub-txt {
   margin-top: 30px;
-  font-size: 20rem;
-  max-width: 350px;
+  font-size: 18rem;
+  max-width: 450px;
 }
 
 #about .profile {
@@ -604,21 +605,27 @@ h1.logo {
 .skill-desc .icon {
   display: flex;
   justify-content: center;
-  height: 100px;
+  height: auto;
 }
 
 .skill-desc .icon img {
-  height: 100%;
+  width: 100%;
+  /* height: 100%; */
 }
 
 .skill-desc .icon>div {
-  flex: 1;
+  /* flex: 1; */
+  width: 70px;
+  height: auto !important;
+  display: flex;
+  justify-content: center;
   padding: 0 5px;
 }
 
 .skill-desc h6 {
   font-size: 24rem;
   text-align: center;
+  font-weight: 600;
 }
 
 .skill-desc p {
